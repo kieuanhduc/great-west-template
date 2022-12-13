@@ -5,3 +5,13 @@ mixin blockBox(data)
 		.block-box-content(style="background-color:"+data.backgroundColor)
 			h3.block-box-content-heading= data.title
 			p.block-box-content-desc= data.desc
+
+mixin menu_li(data)
+	ul
+		each val, key in data
+			li= key + ': ' + val
+
+mixin button_menu_nav(data)
+	.component 
+		a(href="#")= data.text
+	+menu_li(data.menu)
