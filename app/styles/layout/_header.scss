@@ -1,0 +1,83 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    .logo{
+        margin: 61px 0px 18px 94px;
+        img{
+            width: 392px;
+            height: 110px;
+        }   
+    }
+    .block2header{
+        width: 682px;
+        margin: 50px 80px 0px 0px;
+        .searchBlock{
+            display: flex;
+            justify-content: flex-end;
+            height: 40px;
+            margin-right: 10px;
+            margin-bottom: 40px;
+            .visit_arts{
+                border: 1px solid #71322D;
+                height: 40px;
+                width: 200px;
+                margin-right: 3px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 18px;
+                    color: #71322D;
+                }
+            }
+            .customer_portal{
+                border: 1px solid #E07F38;
+                height: 40px;
+                width: 200px;
+                margin-right: 3px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p{
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 18px;
+                    color: #E07F38;
+                }
+            }
+            .button_search{
+                width: 40px;
+                height: 40px;
+                border: 1px solid #7B7B7B;
+                img{
+                    width: 24px;
+                    height: 24px;
+                    margin: 8px 8px;
+                }
+            }
+        }
+        .buttonBlock{
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 28px;
+            .component{
+                a{
+                    color: #7C7C7C;
+                    &:hover{
+                        color: #83B03D;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -65,6 +65,98 @@ button {
   margin: 0 auto;
   padding: 0 30px; }
 
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .header .logo {
+    margin: 61px 0px 18px 94px; }
+    .header .logo img {
+      width: 392px;
+      height: 110px; }
+  .header .block2header {
+    width: 682px;
+    margin: 50px 80px 0px 0px; }
+    .header .block2header .searchBlock {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      height: 40px;
+      margin-right: 10px;
+      margin-bottom: 40px; }
+      .header .block2header .searchBlock .visit_arts {
+        border: 1px solid #71322D;
+        height: 40px;
+        width: 200px;
+        margin-right: 3px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .header .block2header .searchBlock .visit_arts p {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 18px;
+          color: #71322D; }
+      .header .block2header .searchBlock .customer_portal {
+        border: 1px solid #E07F38;
+        height: 40px;
+        width: 200px;
+        margin-right: 3px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .header .block2header .searchBlock .customer_portal p {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 18px;
+          color: #E07F38; }
+      .header .block2header .searchBlock .button_search {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #7B7B7B; }
+        .header .block2header .searchBlock .button_search img {
+          width: 24px;
+          height: 24px;
+          margin: 8px 8px; }
+    .header .block2header .buttonBlock {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px; }
+      .header .block2header .buttonBlock .component a {
+        color: #7C7C7C; }
+        .header .block2header .buttonBlock .component a:hover {
+          color: #83B03D; }
+
 .produce-partner {
   background-color: #428C35;
   background-image: url("../../images/producedure.png");
