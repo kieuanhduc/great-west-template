@@ -1,0 +1,91 @@
+.our-great-products{
+    &-header{
+        h3.heading{
+            margin: 46px 0px 35px 0px;
+            text-align: center;
+        }
+        p.desc{
+            color: $color-dark-gray;
+            max-width: 1040px;
+            margin: 0px auto;
+            text-align: center;
+        }
+    }
+
+    &-info{
+        margin-top: 47px;
+        margin-bottom: 74px;
+        @include gridColumn();
+        .block-box{
+            // max-width: 756px;
+            // max-height: 300px;
+            position: relative;
+            &-image{
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            &-content{
+                @include absoluteCenter("both");
+                @include flexbox(center, center, column);
+                opacity: 0.7;
+                width: 400px;
+                height: 150px;
+                // background-color: $fourth;
+                &-heading{
+                    font-size: 5rem;
+                    font-weight: 400;
+                    color: $title-color;
+                    margin-bottom: 10px;
+                }
+                &-desc{
+                    color: $title-color;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+        @include maxWidth(1023px) {
+            display: block;
+        }
+
+        @include maxWidth(568px) {
+            .block-box{
+                &-content{
+                    width: 315px;
+                    height: 125px;
+                }
+                h3.block-box-content-heading{
+                    font-size: 4rem;
+                }
+                p.block-box-content-desc{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+    .sea-all-products{
+        a{
+            display: block;
+            text-align: center;
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid $color-light-green;
+            margin:0px auto;
+            transition: all 0.25s linear;
+            font-size: 1.8rem;
+            color: $color-light-green;
+            font-weight: 700;
+            &:hover{
+                background-color: $primary-color-hover;
+                color: $text-color;
+            }
+        }
+        
+    }
+
+}

@@ -1,1 +1,3 @@
-# great-west-template
+- `npm install`
+- `npm run watch`
+

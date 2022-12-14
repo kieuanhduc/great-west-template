@@ -1,0 +1,67 @@
+.nice-saying{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+blockquote{
+    width: 656px;
+    border: 1px solid #9A7F41;
+    margin-top: 78px;
+
+}
+.fancy-quote p {
+    line-height: 39.15px;
+    font-size: 3rem;
+    font-family: $primary-font;
+    font-style: italic;
+    color: #9A7F41;
+    max-width: 581px;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 20px;    
+    margin-bottom: 20px;
+    padding: 0px 40px;
+}
+
+.fancy-quote blockquote {
+
+    position: relative;
+
+}
+
+
+
+.fancy-quote blockquote p::before {
+    top: -1rem;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    background-image: url('../../images/Vector.png');
+    background-size: 50px 20px;
+    display: inline-block;
+    width: 50px; 
+    height: 35px;
+    background-repeat: no-repeat;
+    content:"";
+}
+
+.fancy-quote blockquote p::after {
+    bottom: -2.4rem;
+    right: 43%;
+    position: absolute;
+    transform: translateX(-50%);
+    background-image: url('../../images/Vector2.png');
+    background-size: 50px 20px;
+    display: inline-block;
+    width: 50px; 
+    height: 35px;
+    background-repeat: no-repeat;
+    content:"";
+}
+
+@include maxWidth(768px){
+    blockquote{width: auto};
+    .fancy-quote p{
+        font-size: 2rem;
+    }
+}

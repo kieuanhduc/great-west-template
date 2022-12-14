@@ -1,0 +1,48 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'EBGaramond';
+  src: url('../../fonts/EBGaramond-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: normal;
+  src:  url('../../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+
+.text {
+  font-family: $secondary-font;
+  font-size: 1.8rem;
+  color: $text-color;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.title{
+  font-family: $primary-font;
+  font-weight: 400px;
+  font-size: 5rem;
+  color: $title-color;
+}
+
+
+.heading{
+  font-family: $primary-font;
+  font-weight: 400px;
+  font-size: 5rem;
+  color: $color-light-green;
+}
+
+
+.text--light {
+  font-weight: 300;
+}
+.text--normal {
+  font-style: normal;
+}
+// Vercel

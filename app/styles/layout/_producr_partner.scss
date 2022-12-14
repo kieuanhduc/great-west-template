@@ -1,0 +1,62 @@
+.produce-partner {
+    background-color: $primary-color;
+    background-image: url("../../images/producedure.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    .block-box {
+        padding: 57px 0px;
+        text-align: center;
+
+        &-heading {
+            text-align: center;
+        }
+
+        &-desc {
+
+            line-height: 2.0;
+            max-width: 1040px;
+            margin: 0px auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-weight: 300;
+            span{
+                font-weight: 700;
+            }
+        }
+
+        @include maxWidth(767px) {
+            padding: 30px 0px;
+            &-heading {
+                font-size: 4rem;
+            }
+    
+            &-desc {
+                font-size: 1.6rem;
+            
+            }
+    
+        }
+
+    }
+
+    .btn-learn-more {
+        display: inline-block;
+        font-size: 1.8rem;
+        color: $color-white;
+        border: 1px solid $color-white;
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        -webkit-transition: background-color 0.25s ease-out;
+        -moz-transition: background-color 0.25s ease-out;
+        -o-transition: background-color 0.25s ease-out;
+        transition: background-color 0.25s ease-out;
+        &:hover{
+            background-color: $primary-color-hover;
+        }
+    }
+
+
+}
+

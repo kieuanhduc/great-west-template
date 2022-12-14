@@ -1,0 +1,7 @@
+mixin blockBox(data)
+	.block-box
+		.block-box-image
+			img(src=data.src, alt="")
+		.block-box-content(style="background-color:"+data.backgroundColor)
+			h3.block-box-content-heading= data.title
+			p.block-box-content-desc= data.desc
