@@ -1,0 +1,275 @@
+.meet-our-team{
+    &-heading{
+        margin-top: 40px;
+        h3{
+            font-size: 5rem;
+            line-height: 5.6rem;
+            font-weight: 400;
+            text-align: center;
+            font-family:$primary-font;
+            color: $color-light-green;
+        }
+    }
+    &-title{
+        margin-top:3.8rem ;
+        h4{
+            font-size: 1.8rem;
+            font-family: $secondary-font;
+            font-weight: 700;
+            line-height: 2.8rem;
+            color: $color-light-green;
+        }
+    }
+    &-content{
+        &-title{
+            span{
+                font-size: 1.8rem;
+                font-weight: 400;
+                line-height: 3.8rem;
+                color:#D0D2C7 ;
+            }
+        }
+        &-information{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 7.7rem;
+            margin-top: 3.4rem;
+            .our-team{
+                &-image img{
+                    width: 24.7rem;
+                    height: 24.7rem;
+                    border-radius: 12rem;
+                }
+                &-content{
+                    // width: 24.7rem;
+                    word-break: break-word;
+                    margin-top: 3.6rem;
+                    color: $color-dark-gray;
+                    font-family: $secondary-font;
+                    &-heading{
+                        font-size: 1.8rem;
+                        line-height: 3.8rem;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        text-decoration: underline;
+                        margin-bottom: 0.4rem;
+                    }
+                    &-email{
+                        font-size: 1.8rem;
+                        font-weight: 400;
+                        margin-bottom: 2rem;
+                        text-decoration: underline;
+                        height:2.8rem;
+                    }
+                    &-price{
+                        line-height: 2.4rem;
+                        font-weight: 400;
+                        font-size: 1.8rem;
+                        text-decoration: underline;
+                        height:2.8rem;
+                    }
+                    &-desc{
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        text-decoration: underline;
+                        // height:2.8rem;
+                        margin-top: 0.5rem;
+                        line-height: 2.8rem;
+                    }
+                }
+            }
+     
+           
+        }
+        &-true{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 7.7rem;
+            margin-top: 4.5rem;
+            font-family:$secondary-font;
+            .our-team-true{
+                &-heading{
+                    h3{
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        line-height: 3.8rem;
+                        color: #D0D2C7;
+                        margin-bottom: 3.3rem;
+                    }
+                }
+                &-image img{
+                    width: 24.7rem;
+                    height: 24.7rem;
+                    border-radius: 12rem;
+                }
+                &-content{
+                    margin-top: 3.5rem;
+                    color: $color-dark-gray;
+                    &-title{
+                        font-size: 1.8rem;
+                        line-height: 3.8rem;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        text-decoration: underline;
+                        margin-bottom: 0.4rem;
+                    }
+                    &-email{
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        line-height: 3.8rem;
+                        margin-bottom: 0.4rem;
+                        text-decoration: underline;
+                        // max-width: 24.7rem;
+                        word-break: break-word;
+                    }
+                    &-price{
+                        line-height: 2.4rem;
+                        font-weight: 400;
+                        font-size: 1.6rem;
+                        text-decoration: underline;
+                    }
+                }
+                
+            }
+            
+        }
+    }
+}
+@include maxWidth(1160px){
+    .meet-our-team-content-information{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        gap: 5rem;
+        // text-align: center;
+        .out-team{
+            .our-team-content{
+                .our-team-content-desc{
+                    height: 0px !important;
+                }
+            }
+        }
+    }
+    .meet-our-team-content-true{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        gap: 5rem;
+        // text-align: center;
+        .out-team-true{
+            .our-team-true-content{
+                .our-team-true-content-desc{
+                    height: 0px !important;
+                }
+            }
+        }
+
+    }
+}
+@include maxWidth(890px){
+    .meet-our-team-content-information{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 5rem;
+        .our-team{
+            // margin: auto;
+            .our-team-content-email{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .meet-our-team-content-true{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 5rem;
+        .our-team-true{
+            // margin: auto;
+            .our-team-true-content-email{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+}
+@include maxWidth(768px){
+    .meet-our-team-content-information{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 9rem;
+        .our-team{
+            text-align: center;
+            .our-team-image img{
+                margin: auto;
+                width: 18rem;
+                height: 18rem;
+            }
+            .our-team-content
+                .our-team-content-email{
+                    font-size:1.6rem ;
+                }
+                .our-team-content-price{
+                    font-size:1.6rem ;
+                }
+                .our-team-content-desc{
+                    font-size:1.6rem ;
+                }
+        }
+    }
+    .meet-our-team-content-true{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 9rem;
+        .our-team-true{
+            text-align: center;
+            .our-team-image img{
+                margin: auto;
+                width: 18rem;
+                height: 18rem;
+            }
+            .our-team-true-content
+                .our-team-true-content-email{
+                    font-size:1.6rem ;
+                }
+                .our-team-true-content-price{
+                    font-size:1.6rem ;
+                }
+                .our-team-true-content-desc{
+                    font-size:1.6rem ;
+                }
+        }
+    }
+}
+@include maxWidth(563px){
+    .meet-our-team-content-information{
+        display: block;
+        .our-team{
+            margin-bottom: 4.8rem;
+            .our-team-image img{
+                margin: auto;
+                width: 24.7rem;
+                height: 24.7rem;
+            }
+            .our-team-content{
+                text-align: center ;
+                .our-team-content-email{
+                    margin-bottom: 0.3rem;
+                }
+            }
+        }
+    }
+    .meet-our-team-content-true{
+        display: block;
+        .our-team-true{
+            margin-bottom: 4.8rem;
+            .our-team-true-image img{
+                margin: auto;
+                width: 24.7rem;
+                height: 24.7rem;
+            }
+            .our-team-true-content{
+                text-align: center ;
+                .our-team-true-content-email{
+                    margin-bottom: 0.3rem;
+                }
+            }
+        }
+    }
+}

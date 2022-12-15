@@ -15,3 +15,45 @@ mixin button_menu_nav(data)
 	.component 
 		a(href="#")= data.text
 	+menu_li(data.menu)
+
+mixin detailInformation(data)
+	.detail-information
+		.detail-information-image
+			img(src=data.src, alt="")
+		.detail-information-content
+			h3.detail-information-content-heading= data.title
+			h5.detail-information-content-desc= data.desc
+			p.detail-information-content-email= data.email
+			span.detail-information-content-price= data.price
+
+mixin ourTeam(data)
+	.our-team
+		.our-team-image
+			img(src=data.src, alt="")
+		.our-team-content
+			h3.our-team-content-heading= data.title
+			p.our-team-content-email= data.email
+			span.our-team-content-price= data.price
+			h5.our-team-content-desc= data.desc
+			
+
+mixin ourTeamTrue(data)
+	.our-team-true
+		.our-team-true-heading
+			h3.our-team-true-title= data.heading
+		.our-team-true-image
+			img(src=data.src, alt="")
+		.our-team-true-content
+			h3.our-team-true-content-title= data.title
+			p.our-team-true-content-email= data.email
+			span.our-team-true-content-price= data.price
+
+mixin peopleWest(data)
+	.people-west
+		.people-west-image
+			img(src=data.src, alt="")
+		.people-west-content
+			h3.people-west-content-heading= data.title
+			p.people-west-content-email= data.email
+			span.people-west-content-price= data.price
+			
