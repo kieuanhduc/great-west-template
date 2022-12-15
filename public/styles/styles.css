@@ -383,3 +383,405 @@ blockquote {
     width: auto; }
   .fancy-quote p {
     font-size: 2rem; } }
+
+.let-us-introduce-ourselves-titles h3 {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 400;
+  color: #83B03D;
+  font-family: EBGaramond; }
+
+.let-us-introduce-ourselves-content .container {
+  margin-top: 6.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7.7rem;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: center;
+  color: #7B7B7B;
+  font-family: Roboto; }
+
+.let-us-introduce-ourselves-content .detail-information-image img {
+  width: 24.7rem;
+  height: 24.7rem;
+  margin-bottom: 3rem;
+  border-radius: 13rem; }
+
+.let-us-introduce-ourselves-content .detail-information-content {
+  word-break: break-word; }
+  .let-us-introduce-ourselves-content .detail-information-content-heading {
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 2.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 0.4rem; }
+  .let-us-introduce-ourselves-content .detail-information-content-desc {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.7rem;
+    margin-bottom: 0.4rem; }
+  .let-us-introduce-ourselves-content .detail-information-content-email {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    margin-bottom: 0.4rem;
+    text-decoration: underline; }
+  .let-us-introduce-ourselves-content .detail-information-content-price {
+    line-height: 2.4rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-decoration: underline; }
+
+@media screen and (max-width: 1350px) {
+  .let-us-introduce-ourselves-titles h3 {
+    font-size: 4rem; }
+  .let-us-introduce-ourselves-titles span {
+    display: none; }
+  .let-us-introduce-ourselves-content
+.container {
+    gap: 4rem; } }
+
+@media screen and (max-width: 1160px) {
+  .let-us-introduce-ourselves-titles h3 {
+    font-size: 4rem; }
+  .let-us-introduce-ourselves-titles span {
+    display: none; }
+  .let-us-introduce-ourselves-content
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+    text-align: center; } }
+
+@media screen and (max-width: 890px) {
+  .let-us-introduce-ourselves-titles h3 {
+    font-size: 4rem; }
+  .let-us-introduce-ourselves-titles span {
+    display: none; }
+  .let-us-introduce-ourselves-content
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    text-align: center; }
+    .let-us-introduce-ourselves-content
+.container .detail-information {
+      margin: auto; } }
+
+@media screen and (max-width: 768px) {
+  .let-us-introduce-ourselves-titles h3 {
+    font-size: 4rem; }
+  .let-us-introduce-ourselves-titles span {
+    display: none; }
+  .let-us-introduce-ourselves-content
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9rem;
+    text-align: center; }
+    .let-us-introduce-ourselves-content
+.container .detail-information
+.detail-information-image img {
+      margin: auto;
+      width: 18rem;
+      height: 18rem; } }
+
+@media screen and (max-width: 563px) {
+  .let-us-introduce-ourselves-titles h3 {
+    font-size: 4rem;
+    line-height: 4.2rem; }
+  .let-us-introduce-ourselves-titles span {
+    display: none; }
+  .let-us-introduce-ourselves-content
+.container {
+    display: block; }
+    .let-us-introduce-ourselves-content
+.container .detail-information {
+      margin-bottom: 3rem; }
+      .let-us-introduce-ourselves-content
+.container .detail-information .detail-information-image {
+        width: 24.7rem;
+        margin: auto; } }
+
+.meet-our-team-heading {
+  margin-top: 40px; }
+  .meet-our-team-heading h3 {
+    font-size: 5rem;
+    line-height: 5.6rem;
+    font-weight: 400;
+    text-align: center;
+    font-family: EBGaramond;
+    color: #83B03D; }
+
+.meet-our-team-title {
+  margin-top: 3.8rem; }
+  .meet-our-team-title h4 {
+    font-size: 1.8rem;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 2.8rem;
+    color: #83B03D; }
+
+.meet-our-team-content-title span {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3.8rem;
+  color: #D0D2C7; }
+
+.meet-our-team-content-information {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 7.7rem;
+  margin-top: 3.4rem; }
+  .meet-our-team-content-information .our-team-image img {
+    width: 24.7rem;
+    height: 24.7rem;
+    border-radius: 12rem; }
+  .meet-our-team-content-information .our-team-content {
+    word-break: break-word;
+    margin-top: 3.6rem;
+    color: #7B7B7B;
+    font-family: Roboto; }
+    .meet-our-team-content-information .our-team-content-heading {
+      font-size: 1.8rem;
+      line-height: 3.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: underline;
+      margin-bottom: 0.4rem; }
+    .meet-our-team-content-information .our-team-content-email {
+      font-size: 1.8rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+      text-decoration: underline;
+      height: 2.8rem; }
+    .meet-our-team-content-information .our-team-content-price {
+      line-height: 2.4rem;
+      font-weight: 400;
+      font-size: 1.8rem;
+      text-decoration: underline;
+      height: 2.8rem; }
+    .meet-our-team-content-information .our-team-content-desc {
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-decoration: underline;
+      margin-top: 0.5rem;
+      line-height: 2.8rem; }
+
+.meet-our-team-content-true {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 7.7rem;
+  margin-top: 4.5rem;
+  font-family: Roboto; }
+  .meet-our-team-content-true .our-team-true-heading h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 3.8rem;
+    color: #D0D2C7;
+    margin-bottom: 3.3rem; }
+  .meet-our-team-content-true .our-team-true-image img {
+    width: 24.7rem;
+    height: 24.7rem;
+    border-radius: 12rem; }
+  .meet-our-team-content-true .our-team-true-content {
+    margin-top: 3.5rem;
+    color: #7B7B7B; }
+    .meet-our-team-content-true .our-team-true-content-title {
+      font-size: 1.8rem;
+      line-height: 3.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: underline;
+      margin-bottom: 0.4rem; }
+    .meet-our-team-content-true .our-team-true-content-email {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 3.8rem;
+      margin-bottom: 0.4rem;
+      text-decoration: underline;
+      word-break: break-word; }
+    .meet-our-team-content-true .our-team-true-content-price {
+      line-height: 2.4rem;
+      font-weight: 400;
+      font-size: 1.6rem;
+      text-decoration: underline; }
+
+@media screen and (max-width: 1160px) {
+  .meet-our-team-content-information {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem; }
+    .meet-our-team-content-information .out-team .our-team-content .our-team-content-desc {
+      height: 0px !important; }
+  .meet-our-team-content-true {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem; }
+    .meet-our-team-content-true .out-team-true .our-team-true-content .our-team-true-content-desc {
+      height: 0px !important; } }
+
+@media screen and (max-width: 890px) {
+  .meet-our-team-content-information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem; }
+    .meet-our-team-content-information .our-team .our-team-content-email {
+      margin-bottom: 1rem; }
+  .meet-our-team-content-true {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem; }
+    .meet-our-team-content-true .our-team-true .our-team-true-content-email {
+      margin-bottom: 1rem; } }
+
+@media screen and (max-width: 768px) {
+  .meet-our-team-content-information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9rem; }
+    .meet-our-team-content-information .our-team {
+      text-align: center; }
+      .meet-our-team-content-information .our-team .our-team-image img {
+        margin: auto;
+        width: 18rem;
+        height: 18rem; }
+      .meet-our-team-content-information .our-team .our-team-content
+.our-team-content-email {
+        font-size: 1.6rem; }
+      .meet-our-team-content-information .our-team .our-team-content-price {
+        font-size: 1.6rem; }
+      .meet-our-team-content-information .our-team .our-team-content-desc {
+        font-size: 1.6rem; }
+  .meet-our-team-content-true {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9rem; }
+    .meet-our-team-content-true .our-team-true {
+      text-align: center; }
+      .meet-our-team-content-true .our-team-true .our-team-image img {
+        margin: auto;
+        width: 18rem;
+        height: 18rem; }
+      .meet-our-team-content-true .our-team-true .our-team-true-content
+.our-team-true-content-email {
+        font-size: 1.6rem; }
+      .meet-our-team-content-true .our-team-true .our-team-true-content-price {
+        font-size: 1.6rem; }
+      .meet-our-team-content-true .our-team-true .our-team-true-content-desc {
+        font-size: 1.6rem; } }
+
+@media screen and (max-width: 563px) {
+  .meet-our-team-content-information {
+    display: block; }
+    .meet-our-team-content-information .our-team {
+      margin-bottom: 4.8rem; }
+      .meet-our-team-content-information .our-team .our-team-image img {
+        margin: auto;
+        width: 24.7rem;
+        height: 24.7rem; }
+      .meet-our-team-content-information .our-team .our-team-content {
+        text-align: center; }
+        .meet-our-team-content-information .our-team .our-team-content .our-team-content-email {
+          margin-bottom: 0.3rem; }
+  .meet-our-team-content-true {
+    display: block; }
+    .meet-our-team-content-true .our-team-true {
+      margin-bottom: 4.8rem; }
+      .meet-our-team-content-true .our-team-true .our-team-true-image img {
+        margin: auto;
+        width: 24.7rem;
+        height: 24.7rem; }
+      .meet-our-team-content-true .our-team-true .our-team-true-content {
+        text-align: center; }
+        .meet-our-team-content-true .our-team-true .our-team-true-content .our-team-true-content-email {
+          margin-bottom: 0.3rem; } }
+
+.great-west-gourmet {
+  margin-top: 5.2rem; }
+  .great-west-gourmet-title h4 {
+    font-size: 1.8rem;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 2.8rem;
+    color: #83B03D; }
+  .great-west-gourmet-main-title {
+    margin-top: 2.2rem;
+    margin-bottom: 3.1rem; }
+    .great-west-gourmet-main-title span {
+      font-size: 1.8rem;
+      font-weight: 700;
+      font-family: Roboto;
+      color: #D0D2C7; }
+  .great-west-gourmet-main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 7.7rem; }
+    .great-west-gourmet-main-content .people-west-image img {
+      width: 24.7rem;
+      height: 24.7rem;
+      margin-bottom: 3rem;
+      border-radius: 12rem; }
+    .great-west-gourmet-main-content .people-west-content {
+      width: 24.7rem;
+      word-break: break-word;
+      color: #7B7B7B; }
+      .great-west-gourmet-main-content .people-west-content-heading {
+        font-size: 1.8rem;
+        line-height: 3.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: underline;
+        margin-bottom: 0.4rem; }
+      .great-west-gourmet-main-content .people-west-content-email {
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-decoration: underline;
+        height: 2.8rem; }
+      .great-west-gourmet-main-content .people-west-content-price {
+        line-height: 2.8rem;
+        font-weight: 400;
+        font-size: 1.6rem;
+        text-decoration: underline;
+        height: 2.8rem; }
+
+@media screen and (max-width: 1160px) {
+  .great-west-gourmet-main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem; } }
+
+@media screen and (max-width: 890px) {
+  .great-west-gourmet-main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    text-align: center; } }
+
+@media screen and (max-width: 768px) {
+  .great-west-gourmet-main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    text-align: center; }
+    .great-west-gourmet-main-content .people-west
+.people-west-content
+.people-west-content-email {
+      font-size: 1.6rem; }
+    .great-west-gourmet-main-content .people-west-content-price {
+      font-size: 1.6rem; } }
+
+@media screen and (max-width: 563px) {
+  .great-west-gourmet-main-content {
+    display: block; }
+    .great-west-gourmet-main-content .people-west
+.people-west-image {
+      margin: auto;
+      width: 24.7rem;
+      height: 24.7rem; } }
