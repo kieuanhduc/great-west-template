@@ -1,82 +1,87 @@
 header.header
-	.logo 
-		img(src="../../images/GW_Logo.jpg", alt="")
-	.block2header
-		.searchBlock
-			.visit_arts
-				p Visit Arts
-			.customer_portal
-				p Customer Portar
-			.button_search
-				img(src="../../images/search_icon_1.png", alt="")
-		.buttonBlock
-			+button_menu_nav({
-				text: "ABOUT US",
-				menu: [ 
-					{ name: 'Heritage', subMenu: null },
-					{ name: 'Leadership', subMenu: null },
-					{ name: 'Sales Team', subMenu: [
-						{ name: 'Commerce', subMenu: null }, 
-						{ name: 'San Francisco', 	subMenu: [
-							{name: 'submenu3' , subMenu: null},
-							{name: 'submenu3' , subMenu: null},
-							{name: 'submenu3' , subMenu: null},
-							{name: 'submenu3' , subMenu: null},
-							{name: 'submenu3' , subMenu: null},
-						] }, 
-						{ name: 'Nogales', 	subMenu: null }, 
-						{ name: 'Salinas', 	subMenu: null }
-					]},
-				],
-			})
-			+button_menu_nav({
-				text: "PRODUCTS",
-				menu: [
-					{ name: 'Fresh Fruit', subMenu: null, }, 
-					{ name: 'Fresh Vegetables', subMenu: null, }, 
-					{ name: 'Frozen Vegetables', subMenu: null, }, 
-					{ name: 'Organics', subMenu: null, }, 
-					{ name: 'Nogales', subMenu: null, }, 
-					{ name: 'Salinas', subMenu: null, }
-				],
-			})
-			+button_menu_nav({
-				text: "OUR COMMITMENT",
-				menu: [
-					{ name: 'Food Safety', subMenu: null, }, 
-					{ 
-						name: 'Sustainability', 
-						subMenu: [
-							{name: 'submenu2' , subMenu: null},
-							{name: 'submenu2' , subMenu: null},
-							{name: 'submenu2' , subMenu: null},
-						],
-						submenuInLeft: true,
-					}, 
-					{ name: 'Community', subMenu: null, }
-				],
-			})
-			+button_menu_nav({
-				text: "CONTACT US",
-				menu: [
-					{ name: 'Accounts Payable', subMenu: null, },
-					{ name: 'Accounts Receivable', subMenu: null, },
-					{ 
-						name: 'Accounts Receivable', 
-						subMenu: [
-							{name: 'submenu2' , subMenu: null},
-							{
-								name: 'submenu2' , 
-								subMenu: [
-									{name: 'submenu2' , subMenu: null},
-									{name: 'submenu2' , subMenu: null},
-									{name: 'submenu2' , subMenu: null}
-								],
-								submenuInLeft: true,
-							},
-							{name: 'submenu2' , subMenu: null}
-						],
-						submenuInLeft: true,
-					}
-				],
-			})
+	.bigBlock
+		.logo 
+			img(src="../../images/GW_Logo.jpg", alt="")
+		.block2header
+			.searchBlock
+				.visit_arts
+					p Visit Arts
+				.customer_portal
+					p Customer Portar
+				.button_search
+					img(src="../../images/search_icon_1.png", alt="")
+			.buttonBlock
+				+button_menu_nav({
+					text: "ABOUT US",
+					menu: [ 
+						{ name: 'Heritage', subMenu: null },
+						{ name: 'Leadership', subMenu: null },
+						{ name: 'Sales Team', subMenu: [
+							{ name: 'Commerce', subMenu: null }, 
+							{ name: 'San Francisco', 	subMenu: [
+								{name: 'submenu3' , subMenu: null},
+								{name: 'submenu3' , subMenu: null},
+								{name: 'submenu3' , subMenu: null},
+								{name: 'submenu3' , subMenu: null},
+								{name: 'submenu3' , subMenu: null},
+							] }, 
+							{ name: 'Nogales', 	subMenu: null }, 
+							{ name: 'Salinas', 	subMenu: null }
+						]},
+					],
+				})
+				+button_menu_nav({
+					text: "PRODUCTS",
+					menu: [
+						{ name: 'Fresh Fruit', subMenu: null, }, 
+						{ name: 'Fresh Vegetables', subMenu: null, }, 
+						{ name: 'Frozen Vegetables', subMenu: null, }, 
+						{ name: 'Organics', subMenu: null, }, 
+						{ name: 'Nogales', subMenu: null, }, 
+						{ name: 'Salinas', subMenu: null, }
+					],
+				})
+				+button_menu_nav({
+					text: "OUR COMMITMENT",
+					menu: [
+						{ name: 'Food Safety', subMenu: null, }, 
+						{ 
+							name: 'Sustainability', 
+							subMenu: [
+								{name: 'submenu2' , subMenu: null},
+								{name: 'submenu2' , subMenu: null},
+								{name: 'submenu2' , subMenu: null},
+							],
+							submenuInLeft: true,
+						}, 
+						{ name: 'Community', subMenu: null, }
+					],
+				})
+				+button_menu_nav({
+					text: "CONTACT US",
+					menu: [
+						{ name: 'Accounts Payable', subMenu: null, },
+						{ name: 'Accounts Receivable', subMenu: null, },
+						{ 
+							name: 'Accounts Receivable', 
+							subMenu: [
+								{name: 'submenu2' , subMenu: null},
+								{
+									name: 'submenu2' , 
+									subMenu: [
+										{name: 'submenu2' , subMenu: null},
+										{name: 'submenu2' , subMenu: null},
+										{name: 'submenu2' , subMenu: null}
+									],
+									submenuInLeft: true,
+								},
+								{name: 'submenu2' , subMenu: null}
+							],
+							submenuInLeft: true,
+						}
+					],
+				})
+	form.searchForm(action="#", method="post")
+		input(type="text", id="txtSearch", name="txtSearch", value="What are you looking for?")
+		button#btnSubmit(type="submit") 
+			img(src="../../images/search_icon_1.png", alt="")

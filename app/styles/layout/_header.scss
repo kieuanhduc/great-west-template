@@ -1,130 +1,157 @@
 .header{
-    display: flex;
-    justify-content: space-between;
-    .logo{
-        margin: 61px 0px 18px 94px;
-        img{
-            width: 392px;
-            height: 110px;
-        }   
-    }
-    .block2header{
-        width: 682px;
-        margin: 50px 80px 0px 0px;
-        .searchBlock{
-            display: flex;
-            justify-content: flex-end;
-            height: 40px;
-            margin-right: 10px;
-            margin-bottom: 40px;
-            .visit_arts{
-                border: 1px solid #71322D;
-                height: 40px;
-                width: 200px;
-                margin-right: 3px;
+    .bigBlock{
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            margin: 60px 0px 18px 94px;
+            img{
+                width: 392px;
+                height: 110px;
+            }   
+        }
+        .block2header{
+            width: 682px;
+            margin: 50px 80px 0px 0px;
+            .searchBlock{
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                p {
-                    font-family: 'Roboto';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 18px;
-                    line-height: 18px;
-                    color: #71322D;
+                justify-content: flex-end;
+                height: 40px;
+                margin-right: 10px;
+                margin-bottom: 40px;
+                .visit_arts{
+                    border: 1px solid #71322D;
+                    height: 40px;
+                    width: 200px;
+                    margin-right: 3px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    p {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 18px;
+                        color: #71322D;
+                    }
+                }
+                .customer_portal{
+                    border: 1px solid #E07F38;
+                    height: 40px;
+                    width: 200px;
+                    margin-right: 3px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    p{
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 18px;
+                        color: #E07F38;
+                    }
+                }
+                .button_search{
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid #7B7B7B;
+                    img{
+                        width: 24px;
+                        height: 24px;
+                        margin: 8px 8px;
+                    }
                 }
             }
-            .customer_portal{
-                border: 1px solid #E07F38;
-                height: 40px;
-                width: 200px;
-                margin-right: 3px;
+            .buttonBlock{
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                p{
-                    font-family: 'Roboto';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 18px;
-                    line-height: 18px;
-                    color: #E07F38;
-                }
-            }
-            .button_search{
-                width: 40px;
-                height: 40px;
-                border: 1px solid #7B7B7B;
-                img{
-                    width: 24px;
-                    height: 24px;
-                    margin: 8px 8px;
+                justify-content: space-between;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 28px;
+                .component{
+                    position: relative;
+                    a{
+                        color: #7C7C7C;
+                    }
+                    ul{
+                        position: absolute;
+                        display: none;
+                        background-color: #FFFFFF;
+                        li{
+                            position: relative;
+                            margin-top: 1px;
+                            padding: 4px 0 0 10px;
+                            width: 160px;
+                            height: 35px;
+                            background-color: #D0D2C7;
+                            font-size: 12px;
+                            font-family: 'Roboto';
+                            font-weight: 400;
+                            color: #7B7B7B;
+                            a{
+                                display: block;
+                            }
+                            &:hover{
+                                color: #FFFFFF;
+                                background-color: #83B03D;
+                            }
+                            &:hover>ul{
+                                display: block;
+                            }
+                            &:first-child{
+                                margin-top: unset;
+                            }
+                            ul{
+                                position: absolute;
+                                left: 100%;
+                                top: 0%;
+                            }
+                        }
+                    }
+                    &:hover>a{
+                        color: #83B03D;
+                    }
+                    &:hover>ul{
+                        display: block;
+                    }
+                    // &:last-child>ul>li ul{
+                    //     left: unset;
+                    //     right: 100%;
+                    // }
+                    .submenuInLeft{
+                        position: absolute;
+                        left: unset;
+                        right: 100% !important;
+                    }
                 }
             }
         }
-        .buttonBlock{
-            display: flex;
-            justify-content: space-between;
+    }
+    .searchForm{
+        z-index: -1;
+        display: none;
+        margin: 0px 80px 15px 94px;
+        position: relative;
+        #txtSearch{
+            width: 100%;
+            height: 40px;
+            border: 1px solid #7B7B7B;
+            padding-left: 15px;
             font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 700;
             font-size: 18px;
-            line-height: 28px;
-            .component{
-                position: relative;
-                a{
-                    color: #7C7C7C;
-                }
-                ul{
-                    position: absolute;
-                    display: none;
-                    background-color: #FFFFFF;
-                    li{
-                        position: relative;
-                        margin-top: 1px;
-                        padding: 4px 0 0 10px;
-                        width: 160px;
-                        height: 35px;
-                        background-color: #D0D2C7;
-                        font-size: 12px;
-                        font-family: 'Roboto';
-                        font-weight: 400;
-                        color: #7B7B7B;
-                        a{
-                            display: block;
-                        }
-                        &:hover{
-                            color: #FFFFFF;
-                            background-color: #83B03D;
-                        }
-                        &:hover>ul{
-                            display: block;
-                        }
-                        &:first-child{
-                            margin-top: unset;
-                        }
-                        ul{
-                            position: absolute;
-                            left: 100%;
-                            top: 0%;
-                        }
-                    }
-                }
-                &:hover>a{
-                    color: #83B03D;
-                }
-                &:hover>ul{
-                    display: block;
-                }
-                // &:last-child>ul>li ul{
-                //     left: unset;
-                //     right: 100%;
-                // }
-                .submenuInLeft{
-                    position: absolute;
-                    left: unset;
-                    right: 100% !important;
-                }
+        }
+        #btnSubmit{
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            border: none;
+            background-color: #FFFFFF;
+            img{
+                width: 24px;
+                height: 24px;
             }
         }
     }
