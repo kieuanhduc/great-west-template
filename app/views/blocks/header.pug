@@ -1,5 +1,7 @@
 header.header
 	.bigBlock
+		.mobileMenu
+			img(src="../../images/Hamburger_Open.png", alt="")
 		.logo 
 			img(src="../../images/GW_Logo.jpg", alt="")
 		.block2header
@@ -82,6 +84,6 @@ header.header
 					],
 				})
 	form.searchForm(action="#", method="post")
-		input(type="text", id="txtSearch", name="txtSearch", value="What are you looking for?")
+		input(type="text", id="txtSearch", name="txtSearch", placeholder="What are you looking for?")
 		button#btnSubmit(type="submit") 
 			img(src="../../images/search_icon_1.png", alt="")

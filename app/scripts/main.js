@@ -28,9 +28,15 @@ $(document).ready(function () {
 });
 
 
-// show search bar
 $(document).ready(function () {
+  // show search bar
   $('.button_search').click(function(){
     $('.searchForm').toggle();
+  });
+  
+  // show menu in mobile
+  $('.mobileMenu').click(function(){
+    // $('.buttonBlock').attr("style", "display:block !important");
+    $('.buttonBlock').toggle();
   });
 });

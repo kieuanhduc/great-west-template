@@ -71,12 +71,21 @@ button {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  position: relative; }
+  .header .bigBlock .mobileMenu {
+    display: none;
+    width: 37px;
+    position: absolute;
+    top: 60px;
+    right: 20px; }
+    .header .bigBlock .mobileMenu img {
+      display: block; }
   .header .bigBlock .logo {
     margin: 60px 0px 18px 94px; }
     .header .bigBlock .logo img {
       width: 392px;
-      height: 110px; }
+      height: auto; }
   .header .bigBlock .block2header {
     width: 682px;
     margin: 50px 80px 0px 0px; }
@@ -141,6 +150,8 @@ button {
           height: 24px;
           margin: 8px 8px; }
     .header .bigBlock .block2header .buttonBlock {
+      position: relative;
+      z-index: 2;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -194,7 +205,6 @@ button {
           right: 100% !important; }
 
 .header .searchForm {
-  z-index: -1;
   display: none;
   margin: 0px 80px 15px 94px;
   position: relative; }
@@ -214,6 +224,49 @@ button {
     .header .searchForm #btnSubmit img {
       width: 24px;
       height: 24px; }
+
+@media screen and (max-width: 1200px) {
+  .header .bigBlock .logo {
+    margin: 60px 0px 18px 40px; }
+  .header .bigBlock .block2header {
+    width: 475px;
+    margin: 50px 40px 0px 0px; }
+    .header .bigBlock .block2header .searchBlock {
+      font-size: 16px;
+      margin-bottom: 30px; }
+    .header .bigBlock .block2header .buttonBlock {
+      font-size: 16px; } }
+
+@media screen and (max-width: 768px) {
+  .header .bigBlock .logo {
+    margin: 46px 0px 18px 40px; }
+    .header .bigBlock .logo img {
+      width: 203px; }
+  .header .bigBlock .block2header .searchBlock {
+    margin-bottom: 20px; }
+    .header .bigBlock .block2header .searchBlock .visit_arts {
+      width: 150px; }
+    .header .bigBlock .block2header .searchBlock .customer_portal {
+      width: 150px; }
+  .header .bigBlock .block2header .buttonBlock .component:first-child {
+    margin-left: unset; } }
+
+@media screen and (max-width: 660px) {
+  .header .bigBlock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .header .bigBlock .mobileMenu {
+      display: block; }
+    .header .bigBlock .logo {
+      margin: 0px auto;
+      margin-top: 50px; }
+      .header .bigBlock .logo img {
+        width: 203px;
+        height: auto; }
+    .header .bigBlock .block2header .buttonBlock {
+      display: none; } }
 
 .produce-partner {
   background-color: #428C35;
