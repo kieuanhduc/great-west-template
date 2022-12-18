@@ -12,14 +12,14 @@ mixin menu(data, submenuInLeft)
 			ul.submenuInLeft
 				each val, key in data
 					li
-						a(href="#")= val.name
+						a.single-link(href="#")= val.name
 						if(val.subMenu)
 							+menu(val.subMenu, val.submenuInLeft)
 		else
 			ul
 				each val, key in data
 					li
-						a(href="#")= val.name
+						a.single-link(href="#")= val.name
 						if(val.subMenu)
 							+menu(val.subMenu, val.submenuInLeft)
 		
@@ -29,3 +29,13 @@ mixin button_menu_nav(data)
 		.component 
 			a(href="#")= data.text
 			+menu(data.menu, data.submenuInLeft)
+
+mixin social-icon (data)
+	each val, key in data.social
+		a(href="#")
+			img.social-icon(src=val, alt="")
+
+mixin footer-block(data)
+	p.fb-title= data.title
+	.fb-link 
+		+menu(data.menu, data.submenuInLeft)
