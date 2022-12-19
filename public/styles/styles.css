@@ -665,10 +665,10 @@ blockquote {
     gap: 9rem; }
     .meet-our-team-content-true .our-team-true {
       text-align: center; }
-      .meet-our-team-content-true .our-team-true .our-team-image img {
-        margin: auto;
+      .meet-our-team-content-true .our-team-true .our-team-true-image img {
         width: 18rem;
-        height: 18rem; }
+        height: 18rem;
+        margin: auto; }
       .meet-our-team-content-true .our-team-true .our-team-true-content
 .our-team-true-content-email {
         font-size: 1.6rem; }
@@ -768,14 +768,13 @@ blockquote {
   .great-west-gourmet-main-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    text-align: center; }
-    .great-west-gourmet-main-content .people-west
-.people-west-content
-.people-west-content-email {
-      font-size: 1.6rem; }
-    .great-west-gourmet-main-content .people-west-content-price {
-      font-size: 1.6rem; } }
+    gap: 9rem; }
+    .great-west-gourmet-main-content .people-west {
+      text-align: center; }
+      .great-west-gourmet-main-content .people-west .people-west-image img {
+        width: 18rem;
+        height: 18rem;
+        margin: auto; } }
 
 @media screen and (max-width: 563px) {
   .great-west-gourmet-main-content {

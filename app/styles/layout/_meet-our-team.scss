@@ -39,6 +39,7 @@
                     width: 24.7rem;
                     height: 24.7rem;
                     border-radius: 12rem;
+                    
                 }
                 &-content{
                     // width: 24.7rem;
@@ -219,10 +220,10 @@
         gap: 9rem;
         .our-team-true{
             text-align: center;
-            .our-team-image img{
+            .our-team-true-image img{
+                width: 18rem ;
+                height: 18rem ;
                 margin: auto;
-                width: 18rem;
-                height: 18rem;
             }
             .our-team-true-content
                 .our-team-true-content-email{

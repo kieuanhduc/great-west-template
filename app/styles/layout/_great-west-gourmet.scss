@@ -75,7 +75,6 @@
         grid-template-columns: 1fr 1fr; 
         gap: 5rem;
         text-align: center;
-        
     }
 
 }
@@ -84,16 +83,17 @@
     .great-west-gourmet-main-content{
         display: grid;
         grid-template-columns: 1fr 1fr; 
-        gap: 5rem;
-        text-align: center;
-        .people-west
-            .people-west-content
-                .people-west-content-email{
-                    font-size: 1.6rem;
-                }
-                .people-west-content-price{
-                    font-size: 1.6rem;
-                }
+        gap: 9rem;
+        .people-west{
+            text-align: center;
+            .people-west-image img{
+                width: 18rem;
+                height: 18rem;
+                margin: auto;
+            }
+        }
+           
+        
     }    
 }
 @include maxWidth(563px){
