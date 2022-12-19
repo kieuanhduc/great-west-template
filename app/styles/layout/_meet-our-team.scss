@@ -32,17 +32,15 @@
         &-information{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 7.7rem;
+            gap: 9.2rem 7.7rem;
             margin-top: 3.4rem;
             .our-team{
                 &-image img{
                     width: 24.7rem;
                     height: 24.7rem;
                     border-radius: 12rem;
-                    
                 }
                 &-content{
-                    // width: 24.7rem;
                     word-break: break-word;
                     margin-top: 3.6rem;
                     color: $color-dark-gray;
@@ -85,7 +83,7 @@
         &-true{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 7.7rem;
+            gap: 9.2rem 7.7rem;
             margin-top: 4.5rem;
             font-family:$secondary-font;
             .our-team-true{
@@ -104,7 +102,7 @@
                     border-radius: 12rem;
                 }
                 &-content{
-                    margin-top: 3.5rem;
+                    margin-top: 3.6rem;
                     color: $color-dark-gray;
                     &-title{
                         font-size: 1.8rem;
@@ -120,7 +118,6 @@
                         line-height: 3.8rem;
                         margin-bottom: 0.4rem;
                         text-decoration: underline;
-                        // max-width: 24.7rem;
                         word-break: break-word;
                     }
                     &-price{
@@ -140,7 +137,7 @@
     .meet-our-team-content-information{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr; 
-        gap: 5rem;
+        gap: 6.4rem 7.7rem;
         // text-align: center;
         .out-team{
             .our-team-content{
@@ -153,8 +150,7 @@
     .meet-our-team-content-true{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr; 
-        gap: 5rem;
-        // text-align: center;
+        gap: 6.4rem 7.7rem;
         .out-team-true{
             .our-team-true-content{
                 .our-team-true-content-desc{
@@ -169,7 +165,7 @@
     .meet-our-team-content-information{
         display: grid;
         grid-template-columns: 1fr 1fr; 
-        gap: 5rem;
+        gap: 4.8rem 9rem;
         .our-team{
             // margin: auto;
             .our-team-content-email{
@@ -183,9 +179,15 @@
         gap: 5rem;
         .our-team-true{
             // margin: auto;
-            .our-team-true-content-email{
-                margin-bottom: 1rem;
+            .our-team-true-content{
+                margin-top: 3rem;
+                .our-team-true-content-email{
+                    line-height: unset;
+                    height: 2.4rem;
+                    margin-bottom: 1rem;
+                }
             }
+            
         }
     }
 
@@ -194,7 +196,7 @@
     .meet-our-team-content-information{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 9rem;
+        gap: 4.8rem 9rem;
         .our-team{
             text-align: center;
             .our-team-image img{
@@ -217,7 +219,7 @@
     .meet-our-team-content-true{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 9rem;
+        gap: 4.8rem 9rem;
         .our-team-true{
             text-align: center;
             .our-team-true-image img{
@@ -244,7 +246,6 @@
         .our-team{
             margin-bottom: 4.8rem;
             .our-team-image img{
-                margin: auto;
                 width: 24.7rem;
                 height: 24.7rem;
             }
@@ -266,7 +267,7 @@
                 height: 24.7rem;
             }
             .our-team-true-content{
-                text-align: center ;
+                margin-top: 3rem;
                 .our-team-true-content-email{
                     margin-bottom: 0.3rem;
                 }

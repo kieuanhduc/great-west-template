@@ -89,7 +89,7 @@
         .container{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr; 
-            gap: 5rem;
+            gap: 5.6rem 7.7rem;
             text-align: center;
         }
 }
@@ -104,7 +104,7 @@
         .container{
             display: grid;
             grid-template-columns: 1fr 1fr; 
-            gap: 5rem;
+            gap: 5.6rem 9rem;
             text-align: center;
             .detail-information{
                 margin: auto;
@@ -124,13 +124,20 @@
         .container{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 9rem;
+            gap: 4.6rem 9rem;
             text-align: center;
             .detail-information
                 .detail-information-image img{
                     margin: auto;
                     width: 18rem;
                     height: 18rem;
+                }
+                .detail-information-content{
+                    margin-top: 3rem;
+                    .detail-information-content-desc{
+                        height: 2.7rem;
+                        line-height: 1.7rem;
+                    }
                 }
         }
 }
@@ -147,9 +154,18 @@
             display: block;
             .detail-information{
                 margin-bottom: 3rem;
-                .detail-information-image{
+                .detail-information-image img{
                     width: 24.7rem;
-                    margin: auto;
+                    height: 24.7rem;
+                }
+                .detail-information-content{
+                    margin-top: 3rem;
+                    .detail-information-content-desc{
+                        line-height: unset;
+                    }
+                    .detail-information-content-email{
+                        line-height: unset;
+                    }
                 }
             }
         }

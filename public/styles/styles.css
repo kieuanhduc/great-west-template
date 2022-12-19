@@ -456,7 +456,7 @@ blockquote {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 5rem;
+    gap: 5.6rem 7.7rem;
     text-align: center; } }
 
 @media screen and (max-width: 890px) {
@@ -468,7 +468,7 @@ blockquote {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5rem;
+    gap: 5.6rem 9rem;
     text-align: center; }
     .let-us-introduce-ourselves-content
 .container .detail-information {
@@ -483,14 +483,21 @@ blockquote {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 9rem;
+    gap: 4.6rem 9rem;
     text-align: center; }
     .let-us-introduce-ourselves-content
 .container .detail-information
 .detail-information-image img {
       margin: auto;
       width: 18rem;
-      height: 18rem; } }
+      height: 18rem; }
+    .let-us-introduce-ourselves-content
+.container .detail-information-content {
+      margin-top: 3rem; }
+      .let-us-introduce-ourselves-content
+.container .detail-information-content .detail-information-content-desc {
+        height: 2.7rem;
+        line-height: 1.7rem; } }
 
 @media screen and (max-width: 563px) {
   .let-us-introduce-ourselves-titles h3 {
@@ -505,9 +512,18 @@ blockquote {
 .container .detail-information {
       margin-bottom: 3rem; }
       .let-us-introduce-ourselves-content
-.container .detail-information .detail-information-image {
+.container .detail-information .detail-information-image img {
         width: 24.7rem;
-        margin: auto; } }
+        height: 24.7rem; }
+      .let-us-introduce-ourselves-content
+.container .detail-information .detail-information-content {
+        margin-top: 3rem; }
+        .let-us-introduce-ourselves-content
+.container .detail-information .detail-information-content .detail-information-content-desc {
+          line-height: unset; }
+        .let-us-introduce-ourselves-content
+.container .detail-information .detail-information-content .detail-information-content-email {
+          line-height: unset; } }
 
 .meet-our-team-heading {
   margin-top: 40px; }
@@ -537,7 +553,7 @@ blockquote {
 .meet-our-team-content-information {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 7.7rem;
+  gap: 9.2rem 7.7rem;
   margin-top: 3.4rem; }
   .meet-our-team-content-information .our-team-image img {
     width: 24.7rem;
@@ -577,7 +593,7 @@ blockquote {
 .meet-our-team-content-true {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 7.7rem;
+  gap: 9.2rem 7.7rem;
   margin-top: 4.5rem;
   font-family: Roboto; }
   .meet-our-team-content-true .our-team-true-heading h3 {
@@ -591,7 +607,7 @@ blockquote {
     height: 24.7rem;
     border-radius: 12rem; }
   .meet-our-team-content-true .our-team-true-content {
-    margin-top: 3.5rem;
+    margin-top: 3.6rem;
     color: #7B7B7B; }
     .meet-our-team-content-true .our-team-true-content-title {
       font-size: 1.8rem;
@@ -617,13 +633,13 @@ blockquote {
   .meet-our-team-content-information {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 5rem; }
+    gap: 6.4rem 7.7rem; }
     .meet-our-team-content-information .out-team .our-team-content .our-team-content-desc {
       height: 0px !important; }
   .meet-our-team-content-true {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 5rem; }
+    gap: 6.4rem 7.7rem; }
     .meet-our-team-content-true .out-team-true .our-team-true-content .our-team-true-content-desc {
       height: 0px !important; } }
 
@@ -631,21 +647,25 @@ blockquote {
   .meet-our-team-content-information {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5rem; }
+    gap: 4.8rem 9rem; }
     .meet-our-team-content-information .our-team .our-team-content-email {
       margin-bottom: 1rem; }
   .meet-our-team-content-true {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5rem; }
-    .meet-our-team-content-true .our-team-true .our-team-true-content-email {
-      margin-bottom: 1rem; } }
+    .meet-our-team-content-true .our-team-true .our-team-true-content {
+      margin-top: 3rem; }
+      .meet-our-team-content-true .our-team-true .our-team-true-content .our-team-true-content-email {
+        line-height: unset;
+        height: 2.4rem;
+        margin-bottom: 1rem; } }
 
 @media screen and (max-width: 768px) {
   .meet-our-team-content-information {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 9rem; }
+    gap: 4.8rem 9rem; }
     .meet-our-team-content-information .our-team {
       text-align: center; }
       .meet-our-team-content-information .our-team .our-team-image img {
@@ -662,7 +682,7 @@ blockquote {
   .meet-our-team-content-true {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 9rem; }
+    gap: 4.8rem 9rem; }
     .meet-our-team-content-true .our-team-true {
       text-align: center; }
       .meet-our-team-content-true .our-team-true .our-team-true-image img {
@@ -683,7 +703,6 @@ blockquote {
     .meet-our-team-content-information .our-team {
       margin-bottom: 4.8rem; }
       .meet-our-team-content-information .our-team .our-team-image img {
-        margin: auto;
         width: 24.7rem;
         height: 24.7rem; }
       .meet-our-team-content-information .our-team .our-team-content {
@@ -699,7 +718,7 @@ blockquote {
         width: 24.7rem;
         height: 24.7rem; }
       .meet-our-team-content-true .our-team-true .our-team-true-content {
-        text-align: center; }
+        margin-top: 3rem; }
         .meet-our-team-content-true .our-team-true .our-team-true-content .our-team-true-content-email {
           margin-bottom: 0.3rem; } }
 
@@ -722,14 +741,13 @@ blockquote {
   .great-west-gourmet-main-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 7.7rem; }
+    gap: 5.6rem 7.7rem; }
     .great-west-gourmet-main-content .people-west-image img {
       width: 24.7rem;
       height: 24.7rem;
       margin-bottom: 3rem;
       border-radius: 12rem; }
     .great-west-gourmet-main-content .people-west-content {
-      width: 24.7rem;
       word-break: break-word;
       color: #7B7B7B; }
       .great-west-gourmet-main-content .people-west-content-heading {
@@ -755,32 +773,39 @@ blockquote {
   .great-west-gourmet-main-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 5rem; } }
+    gap: 6.4rem 7.7rem; } }
 
 @media screen and (max-width: 890px) {
   .great-west-gourmet-main-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    text-align: center; } }
+    gap: 4.8rem 9rem;
+    text-align: center; }
+    .great-west-gourmet-main-content .people-west .people-west-image img {
+      margin: auto; }
+    .great-west-gourmet-main-content .people-west .people-west-content {
+      margin-top: 3rem; } }
 
 @media screen and (max-width: 768px) {
   .great-west-gourmet-main-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 9rem; }
-    .great-west-gourmet-main-content .people-west {
-      text-align: center; }
-      .great-west-gourmet-main-content .people-west .people-west-image img {
-        width: 18rem;
-        height: 18rem;
-        margin: auto; } }
+    gap: 4.8rem 9rem; }
+    .great-west-gourmet-main-content .people-west .people-west-image img {
+      width: 18rem;
+      height: 18rem;
+      margin: auto; }
+    .great-west-gourmet-main-content .people-west .people-west-content {
+      margin-top: 3rem; } }
 
 @media screen and (max-width: 563px) {
   .great-west-gourmet-main-content {
     display: block; }
-    .great-west-gourmet-main-content .people-west
-.people-west-image {
-      margin: auto;
-      width: 24.7rem;
-      height: 24.7rem; } }
+    .great-west-gourmet-main-content .people-west {
+      margin-bottom: 4.8rem; }
+      .great-west-gourmet-main-content .people-west .people-west-image img {
+        margin: auto;
+        width: 24.7rem;
+        height: 24.7rem; }
+      .great-west-gourmet-main-content .people-west .people-west-content {
+        margin-top: 3rem; } }
