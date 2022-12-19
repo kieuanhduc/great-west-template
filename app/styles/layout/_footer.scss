@@ -1,0 +1,305 @@
+html {
+    scroll-behavior: smooth;
+}
+.footer-bar {
+    background: #231F20;
+    min-height: 331px;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    position: relative;
+    
+    .background {
+        position: absolute;
+        right: 0;
+        z-index: 0;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .container {
+        padding: 46px 0 45px 0;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+
+        .footer-block {
+            position: relative;
+
+            .fb-social {
+                margin-bottom: 26px;
+
+                .social {
+                    display: inline-flex;
+                    gap: 15px;
+        
+                    img {
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+
+                .fb-title {
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+            }
+            
+            .fb-title {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 28px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            }
+
+            .fb-company {
+                font-size: 18px;
+                line-height: 28px;
+
+                .bold-text {
+                    font-weight: 700;
+                }
+
+                .normal-text {
+                    font-weight: 400;
+
+                    .phone, .email {
+                        color: #FFFFFF;
+                    }
+
+                    .phone:hover, .email:hover {
+                        color: #d16832;
+                    }
+                }
+            }
+
+            .fb-link {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 22px;
+
+                a {
+                    color: #FFFFFF;
+                }
+                &:hover {
+                    color: #d16832;
+                }
+
+                ul {
+                    position: absolute;
+                    width: 100%;
+
+                    li {
+                        position: relative;
+                        color: #7B7B7B;
+
+                        &:hover>ul {
+                            display: block;
+                        }
+
+                        ul {
+                            display: none;
+                            font-weight: 400;
+                            margin-left: 6px;
+
+                            li {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .block-box-center {
+            display: flex;
+        }
+
+        .block-box-right {
+            display: flex;
+        }
+
+        .security {
+            .fb-title {
+                margin-bottom: 25px;
+            }
+        } 
+
+        .follow-us { width: 260px;}
+        .security {width: 214px;}
+        .about-us {width: 162px;}
+        .products {width: 169px;}
+        .our-commitment {width: 208px;}
+        .arts {width: 123px;}
+        .contact-us{ width: 132px;}
+
+        .button-scroll-top {
+            position: absolute;
+            right: 0;
+            bottom: 35px;
+            cursor: pointer;
+    
+            .btn-scroll-top {
+                height: 90px;
+                width: 90px;
+                border: 1px solid #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+    
+                img {
+                    width: 65px;
+                    height: 27.5px;
+                }
+            }
+    
+            span {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 22px;
+                text-align: center;
+                text-transform: uppercase;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1400px){
+        .container {
+            padding: 46px 30px 45px 30px;
+
+            .follow-us { width: 235px;}
+            .security {width: 170px;}
+            .about-us {width: 110px;}
+            .products {width: 120px;}
+            .our-commitment {width: 185px;}
+            .arts {width: 65px;}
+            .contact-us{ width: 115px;}
+
+            .button-scroll-top {
+                right: 37px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1080px){
+        .container {
+            .fb-link {
+                display: none;
+
+                ul {
+                    position: relative;
+                }
+            }
+            .footer-block:hover .fb-link {
+                display: block;
+            }
+
+            .footer-block {
+                .fb-link {
+
+                    ul {
+                        position: relative;
+                    }
+                }
+            }
+
+            .block-box-center {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .block-box-right {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .fb-title {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        .container {
+            padding: 46px 30px 45px 30px;
+            flex-wrap: wrap;
+            
+
+            .follow-us {
+                order: 3;
+                margin-top: 20px;
+            }
+            .security {
+                order: 1;
+            }
+
+            .block-box-center {
+                order: 2;
+                flex-direction: column;
+            }
+
+            .block-box-right {
+                order: 2;
+                flex-direction: column;
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 530px){
+        .container {
+
+            .follow-us {
+                order: 3;
+                margin-top: 30px;
+            }
+            .security {
+                order: 4;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-between;
+                margin-top: 37px;
+            }
+
+            .block-box-center {
+                order: 1;
+                flex-direction: column;
+            }
+
+            .block-box-right {
+                order: 2;
+                flex-direction: column;
+            }
+
+            .button-scroll-top {
+                position: absolute;
+                right: 40%;
+                bottom: 35px;
+                cursor: pointer;
+            }
+
+            .button-scroll-top {
+                position: relative;
+                left: 42%;
+                bottom: 35px;
+                order: 5;
+            }
+
+            .button-scroll-top {
+                position: relative;
+                left: 37%;
+                bottom: -2px;
+            }
+        }
+    }
+}

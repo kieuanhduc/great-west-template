@@ -1,3 +1,85 @@
-footer.footer
+footer.footer-bar#footer
+  img.background(src="../../images/produce-BGs-art-10.png" alt="")
   .container 
-    p ĐÂY LÀ FOOTER
+    .footer-block.follow-us
+      .fb-social
+        p.fb-title Follow Us
+        .social
+          +social-icon({
+            social:['../../images/Icons_Facebook.png',
+            '../../images/Icons_Instagram.png',
+            '../../images/Icons_Twitter.png',
+            '../../images/Icons_Youtube.png']
+          })
+      .fb-company
+        p.bold-text Great West Produce Company
+        .normal-text
+          p 2600 S. Eastern Ave.
+          p Commerce, CA 90040
+          p 
+            a.email(href="mailto:info@greatwestproduce.com") info@greatwestproduce.com
+          p
+            a.phone(href="tel:3238690200") 323.869.0200
+
+    .footer-block.security
+      p.fb-title Privacy Policy
+      p.fb-title Terms of Use
+      p.fb-title CAREERS
+
+    .block-box-center
+      .footer-block.about-us
+        +footer-block({
+          title: "ABOUT US",
+          menu: [ 
+            { name: 'Heritage', subMenu: null },
+            { name: 'Leadership', subMenu: null },
+            { name: 'Sales Team', subMenu: [
+              { name: '-Commerce', subMenu: null }, 
+              { name: '-San Francisco', 	subMenu: null},
+              { name: '-Nogales', 	subMenu: null }, 
+              { name: '-Salinas', 	subMenu: null }
+            ]},
+          ],
+        })
+
+      .footer-block.products
+        +footer-block({
+          title: "PRODUCTS",
+          menu: [
+            { name: 'Fresh Fruit', subMenu: null, }, 
+            { name: 'Fresh Vegetables', subMenu: null, }, 
+            { name: 'Frozen Produce', subMenu: null, }, 
+            { name: 'Organics', subMenu: null, }
+          ]
+        })
+
+      .footer-block.our-commitment
+        +footer-block({
+          title: "OUR COMMITMENT",
+          menu: [
+            { name: 'Food Safety', subMenu: null, }, 
+            { name: 'Sustainability', subMenu: null}, 
+            { name: 'Community', subMenu: null, }
+          ],
+      })
+    
+    .block-box-right
+      .footer-block.arts
+        +footer-block({
+          title: "ARTS",
+          menu: null,
+        })
+      .footer-block.contact-us
+        +footer-block({
+          title: "CONTACT US",
+          menu: [
+            { name: 'Accounts Payable', subMenu: null, },
+            { name: 'Accounts Receivable', subMenu: null },
+            { name: 'Shipping/Receiving', subMenu: null },
+          ],
+        })
+
+    .button-scroll-top
+      .btn.btn-scroll-top
+        img(src="../../images/arr-top.svg" alt="")
+      span scroll to top
