@@ -394,13 +394,9 @@ blockquote {
 
 .let-us-introduce-ourselves-content .container {
   margin-top: 6.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 7.7rem;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   text-align: center;
   color: #7B7B7B;
   font-family: Roboto; }
@@ -408,10 +404,11 @@ blockquote {
 .let-us-introduce-ourselves-content .detail-information-image img {
   width: 24.7rem;
   height: 24.7rem;
-  margin-bottom: 3rem;
-  border-radius: 13rem; }
+  border-radius: 13rem;
+  margin: auto; }
 
 .let-us-introduce-ourselves-content .detail-information-content {
+  margin-top: 3rem;
   word-break: break-word; }
   .let-us-introduce-ourselves-content .detail-information-content-heading {
     font-size: 1.8rem;
@@ -457,9 +454,16 @@ blockquote {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5.6rem 7.7rem;
-    text-align: center; } }
+    text-align: center; }
+    .let-us-introduce-ourselves-content
+.container .detail-information
+.detail-information-image img {
+      margin: auto; }
+    .let-us-introduce-ourselves-content
+.container .detail-information-content {
+      margin-top: 3rem; } }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 967px) {
   .let-us-introduce-ourselves-titles h3 {
     font-size: 4rem; }
   .let-us-introduce-ourselves-titles span {
