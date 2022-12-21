@@ -1,16 +1,16 @@
 section.meet-our-team
     .container
+        .meet-our-team-click-container-heading
+            h3 Meet Our Team
+        .meet-our-team-click-container-title
+            h4 Great West Produce
+            h4 Commerce, CA
         .meet-our-team-click
+            .meet-our-team-click-container-content-title
+                span Sales
             button.meet-our-team-click-dropbtn(type='button', onclick='myTeam()' ) <p>Great West Produce - Commerce, CA</p> <span >&#8250;</span>
             .meet-our-team-click-container#myOurTeam
-                .meet-our-team-click-container-heading
-                    h3 Meet Our Team
-                .meet-our-team-click-container-title
-                    h4 Great West Produce
-                    h4 Commerce, CA
                 .meet-our-team-click-container-content
-                .meet-our-team-click-container-content-title
-                    span Sales
                 .meet-our-team-click-container-content-information
                     +ourTeam({
                         src: "../../images/images1.jpg",
@@ -103,23 +103,6 @@ section.meet-our-team
                         price:"323-869-0200",
                     })
 
-            button.meet-our-team-click-dropbtnTrue(type='button', onclick='myTeamTrue()' ) <p>Great West Gourmet - San Francisco, CA</p> <span>&#8250;</span>
-            .meet-our-team-click-content-true#myDropdownTeam
-                +ourTeamTrue({
-                    heading: "Gabriel Gonzalez",
-                    src: "../../images/images1.jpg",
-                    title: "Bobby Hunt",
-                    email: "gabriel@greatwestproduce.com",
-                    price:"323-869-0200",
-                })
-                +ourTeamTrue({
-                    heading: "Joe San Marco",
-                    src: "../../images/images1.jpg",
-                    title: "Bobby Hunt",
-                    email: "sanmarco@greatwestproduce.com",
-                    price:"323-869-0200",
-                })
-        
        
 
        

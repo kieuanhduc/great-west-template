@@ -29,22 +29,28 @@ $(document).ready(function () {
 
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
-}
-
-window.onclick = function (event) {
-  if (!event.target.matches(".let-us-introduce-ourselves-click-dropbtn")) {
-    var dropdowns = document.getElementsByClassName(
-      "let-us-introduce-ourselves-content"
-    );
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains("show")) {
-        openDropdown.classList.remove("show");
+  window.onclick = function (event) {
+    if (!event.target.matches(".let-us-introduce-ourselves-click-dropbtn")) {
+      var dropdowns = document.getElementsByClassName(
+        "let-us-introduce-ourselves-content"
+      );
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains("show")) {
+          openDropdown.classList.remove("show");
+        }
       }
     }
-  }
-};
+  };
+
+  // var select_item = document.getElementsByClassName("let-us-introduce-ourselves-titles-span")[0].style.display;
+  // if(select_item === 'block')
+  //   document.getElementsByClassName("let-us-introduce-ourselves-titles-span")[0].style.display="none";
+  // else
+  //   document.getElementsByClassName("let-us-introduce-ourselves-titles-span")[0].style.display="block";
+}
+
 
 function myTeam() {
   var select_item = document.getElementsByClassName("meet-our-team-click-container")[0].style.display;
@@ -53,29 +59,12 @@ function myTeam() {
   else
     document.getElementsByClassName("meet-our-team-click-container")[0].style.display="none";
 }
-function myTeamTrue() {
-  var select_itemTrue = document.getElementsByClassName("meet-our-team-click-content-true")[0].style.display;
-  if(select_itemTrue === 'none')
-    document.getElementsByClassName("meet-our-team-click-content-true")[0].style.display="block";
+
+
+function showGreat() {
+  var select_item = document.getElementsByClassName("great-west-gourmet-main")[0].style.display;
+  if(select_item === 'none')
+    document.getElementsByClassName("great-west-gourmet-main")[0].style.display="block";
   else
-    document.getElementsByClassName("meet-our-team-click-content-true")[0].style.display="none";
-
-  
-    // window.onclick = function (event) {
-    //   if (!event.target.matches(".meet-our-team-click-dropbtnTrue")) {
-    //     var dropdownsTrue = document.getElementsByClassName(
-    //       "meet-our-team-click"
-    //     );
-    //     var y;
-    //     for (y = 0; y < dropdownsTrue.length; y++) {
-    //       var openDropdownTrue = dropdownsTrue[y];
-    //       if (openDropdownTrue.classList.contains("showTrue")) {
-    //         openDropdownTrue.classList.remove("showTrue");
-    //       }
-    //     }
-    //   }
-    // };
+    document.getElementsByClassName("great-west-gourmet-main")[0].style.display="none";
 }
-
-
-

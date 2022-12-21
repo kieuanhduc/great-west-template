@@ -384,13 +384,31 @@ blockquote {
   .fancy-quote p {
     font-size: 2rem; } }
 
-.let-us-introduce-ourselves-titles h3 {
-  margin-top: 5rem;
-  text-align: center;
-  font-size: 5rem;
-  font-weight: 400;
-  color: #83B03D;
-  font-family: EBGaramond; }
+.let-us-introduce-ourselves-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template: 1rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .let-us-introduce-ourselves-titles h3 {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 400;
+    color: #83B03D;
+    font-family: EBGaramond; }
+  .let-us-introduce-ourselves-titles .let-us-introduce-ourselves-titles-span {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 400;
+    color: #83B03D;
+    font-family: EBGaramond; }
 
 .let-us-introduce-ourselves-click button {
   display: none; }
@@ -408,9 +426,17 @@ blockquote {
 
 .let-us-introduce-ourselves-click span {
   content: "\203A";
-  color: #FFFFFF;
   font-size: 3.2rem;
   padding-bottom: 0.6rem; }
+
+.let-us-introduce-ourselves-click .let-us-introduce-ourselves-click-titles {
+  display: none;
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 400;
+  color: #83B03D;
+  font-family: EBGaramond; }
 
 .let-us-introduce-ourselves-content .container {
   margin-top: 6.5rem;
@@ -460,6 +486,8 @@ blockquote {
     font-size: 4rem; }
   .let-us-introduce-ourselves-titles span {
     display: none; }
+  .let-us-introduce-ourselves-titles-span {
+    display: none; }
   .let-us-introduce-ourselves-content
 .container {
     gap: 4rem; } }
@@ -505,9 +533,12 @@ blockquote {
     font-size: 4rem; }
   .let-us-introduce-ourselves-titles span {
     display: none; }
+  .let-us-introduce-ourselves-titles-span {
+    display: none; }
+  .let-us-introduce-ourselves-click .let-us-introduce-ourselves-click-titles {
+    display: unset; }
   .let-us-introduce-ourselves-click .let-us-introduce-ourselves-click-dropbtn {
     margin-top: 3rem;
-    display: block;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -524,7 +555,8 @@ blockquote {
       font-size: 1.6rem;
       line-height: 2.6rem; }
   .let-us-introduce-ourselves-content {
-    display: none; }
+    display: none;
+    margin-bottom: 30px; }
     .let-us-introduce-ourselves-content .container {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -542,13 +574,24 @@ blockquote {
           line-height: 1.7rem; } }
 
 @media screen and (max-width: 563px) {
+  .let-us-introduce-ourselves-titles {
+    position: relative;
+    display: block; }
   .let-us-introduce-ourselves-titles h3 {
     font-size: 4rem;
     line-height: 4.2rem; }
   .let-us-introduce-ourselves-titles span {
     display: none; }
+  .let-us-introduce-ourselves-titles-span {
+    display: none;
+    position: absolute;
+    font-size: 4rem;
+    top: 109px;
+    left: 57px; }
   .let-us-introduce-ourselves-click .let-us-introduce-ourselves-click-dropbtn {
     width: 100%; }
+    .let-us-introduce-ourselves-click .let-us-introduce-ourselves-click-dropbtn p {
+      font-size: 14px; }
   .let-us-introduce-ourselves-content
 .container {
     display: block; }
@@ -587,22 +630,6 @@ blockquote {
     padding-bottom: 0.6rem; }
 
 .meet-our-team-click .showTrue {
-  display: block; }
-
-.meet-our-team-click .meet-our-team-click-dropbtnTrue {
-  background-color: #D0D2C7;
-  color: #FFFFFF;
-  padding: 0.4rem;
-  font-size: 1.6rem;
-  border: none;
-  cursor: pointer; }
-  .meet-our-team-click .meet-our-team-click-dropbtnTrue span {
-    content: "\203A";
-    color: #FFFFFF;
-    font-size: 3.2rem;
-    padding-bottom: 0.6rem; }
-
-.meet-our-team-click .showMain {
   display: block; }
 
 .meet-our-team-click-container-heading {
@@ -670,58 +697,12 @@ blockquote {
       margin-top: 0.5rem;
       line-height: 2.8rem; }
 
-.meet-our-team-click-content-true {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 9.2rem 7.7rem;
-  margin-top: 4.5rem;
-  font-family: Roboto; }
-  .meet-our-team-click-content-true .our-team-true-heading h3 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 3.8rem;
-    color: #D0D2C7;
-    margin-bottom: 3.3rem; }
-  .meet-our-team-click-content-true .our-team-true-image img {
-    width: 24.7rem;
-    height: 24.7rem;
-    border-radius: 12rem; }
-  .meet-our-team-click-content-true .our-team-true-content {
-    margin-top: 3.6rem;
-    color: #7B7B7B; }
-    .meet-our-team-click-content-true .our-team-true-content-title {
-      font-size: 1.6rem;
-      line-height: 3.8rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      text-decoration: underline;
-      margin-bottom: 0.4rem; }
-    .meet-our-team-click-content-true .our-team-true-content-email {
-      font-size: 1.6rem;
-      font-weight: 400;
-      line-height: 2rem;
-      margin-bottom: 1.4rem;
-      height: 2.8rem;
-      text-decoration: underline;
-      word-break: break-word; }
-    .meet-our-team-click-content-true .our-team-true-content-price {
-      line-height: 2.4rem;
-      font-weight: 400;
-      font-size: 1.6rem;
-      text-decoration: underline; }
-
 @media screen and (max-width: 1160px) {
   .meet-our-team-click-container-content-information {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 6.4rem 7.7rem; }
     .meet-our-team-click-container-content-information .out-team .our-team-content .our-team-content-desc {
-      height: 0px !important; }
-  .meet-our-team-click-content-true {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 6.4rem 7.7rem; }
-    .meet-our-team-click-content-true .out-team-true .our-team-true-content .our-team-true-content-desc {
       height: 0px !important; } }
 
 @media screen and (max-width: 890px) {
@@ -730,21 +711,16 @@ blockquote {
     grid-template-columns: 1fr 1fr;
     gap: 4.8rem 9rem; }
     .meet-our-team-click-container-content-information .our-team .our-team-content-email {
-      margin-bottom: 1rem; }
-  .meet-our-team-click-content-true {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem; }
-    .meet-our-team-click-content-true .our-team-true .our-team-true-content {
-      margin-top: 3rem; }
-      .meet-our-team-click-content-true .our-team-true .our-team-true-content .our-team-true-content-email {
-        line-height: unset;
-        height: 2.4rem;
-        margin-bottom: 1rem; } }
+      margin-bottom: 1rem; } }
 
 @media screen and (max-width: 768px) {
+  .meet-our-team-click-container-heading {
+    display: none; }
+  .meet-our-team-click-container-title {
+    display: none; }
+  .meet-our-team-click .meet-our-team-click-container-content-title {
+    display: none; }
   .meet-our-team-click .meet-our-team-click-dropbtn {
-    margin-top: 3rem;
     display: block;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -763,26 +739,6 @@ blockquote {
       line-height: 2.6rem; }
   .meet-our-team-click .meet-our-team-click-container {
     display: none; }
-  .meet-our-team-click .meet-our-team-click-dropbtnTrue {
-    margin-top: 3rem;
-    display: block;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 1.5rem;
-    height: 4rem; }
-    .meet-our-team-click .meet-our-team-click-dropbtnTrue p {
-      font-size: 1.6rem;
-      line-height: 2.6rem; }
-  .meet-our-team-click .meet-our-team-click-content-true {
-    display: none; }
   .meet-our-team-click-container-content-information {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -799,26 +755,11 @@ blockquote {
       .meet-our-team-click-container-content-information .our-team .our-team-content-price {
         font-size: 1.6rem; }
       .meet-our-team-click-container-content-information .our-team .our-team-content-desc {
-        font-size: 1.6rem; }
-  .meet-our-team-click-content-true {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4.8rem 9rem; }
-    .meet-our-team-click-content-true .our-team-true {
-      text-align: center; }
-      .meet-our-team-click-content-true .our-team-true .our-team-true-image img {
-        width: 18rem;
-        height: 18rem;
-        margin: auto; }
-      .meet-our-team-click-content-true .our-team-true .our-team-true-content
-.our-team-true-content-email {
-        font-size: 1.6rem; }
-      .meet-our-team-click-content-true .our-team-true .our-team-true-content-price {
-        font-size: 1.6rem; }
-      .meet-our-team-click-content-true .our-team-true .our-team-true-content-desc {
         font-size: 1.6rem; } }
 
 @media screen and (max-width: 563px) {
+  .meet-our-team-click .meet-our-team-click-dropbtn p {
+    font-size: 14px; }
   .meet-our-team-click-container-content-information {
     display: block; }
     .meet-our-team-click-container-content-information .our-team {
@@ -829,18 +770,6 @@ blockquote {
       .meet-our-team-click-container-content-information .our-team .our-team-content {
         text-align: center; }
         .meet-our-team-click-container-content-information .our-team .our-team-content .our-team-content-email {
-          margin-bottom: 0.3rem; }
-  .meet-our-team-click-content-true {
-    display: block; }
-    .meet-our-team-click-content-true .our-team-true {
-      margin-bottom: 4.8rem; }
-      .meet-our-team-click-content-true .our-team-true .our-team-true-image img {
-        margin: auto;
-        width: 24.7rem;
-        height: 24.7rem; }
-      .meet-our-team-click-content-true .our-team-true .our-team-true-content {
-        margin-top: 3rem; }
-        .meet-our-team-click-content-true .our-team-true .our-team-true-content .our-team-true-content-email {
           margin-bottom: 0.3rem; } }
 
 .great-west-gourmet {
@@ -851,6 +780,21 @@ blockquote {
     font-weight: 700;
     line-height: 2.8rem;
     color: #83B03D; }
+  .great-west-gourmet .great-west-gourmet-main-dropdown {
+    display: none;
+    background-color: #D0D2C7;
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+    padding: 0 1.5rem; }
+    .great-west-gourmet .great-west-gourmet-main-dropdown span {
+      content: "\203A";
+      color: #FFFFFF;
+      font-size: 3.2rem;
+      padding-bottom: 0.6rem; }
+  .great-west-gourmet .showGreat {
+    display: block; }
   .great-west-gourmet-main-title {
     margin-top: 2.2rem;
     margin-bottom: 3.1rem; }
@@ -909,18 +853,44 @@ blockquote {
       margin-top: 3rem; } }
 
 @media screen and (max-width: 768px) {
+  .great-west-gourmet {
+    margin-top: unset; }
+  .great-west-gourmet-title {
+    display: none; }
+  .great-west-gourmet-main-dropdown {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1.5rem;
+    height: 4rem; }
+    .great-west-gourmet-main-dropdown p {
+      font-size: 1.6rem;
+      line-height: 2.6rem; }
+  .great-west-gourmet-main {
+    display: none; }
+  .great-west-gourmet-main-title {
+    display: none; }
   .great-west-gourmet-main-content {
+    margin-top: 3rem;
+    margin-bottom: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4.8rem 9rem; }
     .great-west-gourmet-main-content .people-west .people-west-image img {
       width: 18rem;
       height: 18rem;
-      margin: auto; }
-    .great-west-gourmet-main-content .people-west .people-west-content {
-      margin-top: 3rem; } }
+      margin: auto; } }
 
 @media screen and (max-width: 563px) {
+  .great-west-gourmet-main-dropdown p {
+    font-size: 14px; }
   .great-west-gourmet-main-content {
     display: block; }
     .great-west-gourmet-main-content .people-west {

@@ -90,7 +90,8 @@
       <section class="us-introduce-ourselves">
         <div class="container">
           <div class="let-us-introduce-ourselves-titles">
-            <h3>Let Us Introduce Ourselves<span>:</span><span>Leadership</span></h3>
+            <h3>Let Us Introduce Ourselves<span>:</span></h3>
+            <div class="let-us-introduce-ourselves-titles-span">Leadership</div>
           </div>
           <div class="let-us-introduce-ourselves-click">
             <button class="let-us-introduce-ourselves-click-dropbtn" type="button" onclick="myFunction()"><p>Leadership</p> <span>&#8250;</span></button>
@@ -135,18 +136,18 @@
       </section>
       <section class="meet-our-team">
         <div class="container">
+          <div class="meet-our-team-click-container-heading">
+            <h3>Meet Our Team</h3>
+          </div>
+          <div class="meet-our-team-click-container-title">
+            <h4>Great West Produce</h4>
+            <h4>Commerce, CA</h4>
+          </div>
           <div class="meet-our-team-click">
+            <div class="meet-our-team-click-container-content-title"><span>Sales</span></div>
             <button class="meet-our-team-click-dropbtn" type="button" onclick="myTeam()"><p>Great West Produce - Commerce, CA</p> <span >&#8250;</span></button>
             <div class="meet-our-team-click-container" id="myOurTeam">
-              <div class="meet-our-team-click-container-heading">
-                <h3>Meet Our Team</h3>
-              </div>
-              <div class="meet-our-team-click-container-title">
-                <h4>Great West Produce</h4>
-                <h4>Commerce, CA</h4>
-              </div>
               <div class="meet-our-team-click-container-content"></div>
-              <div class="meet-our-team-click-container-content-title"><span>Sales</span></div>
               <div class="meet-our-team-click-container-content-information">
                 <div class="our-team">
                   <div class="our-team-image"><img src="../../images/images1.jpg" alt=""/></div>
@@ -254,26 +255,52 @@
                 </div>
               </div>
             </div>
-            <button class="meet-our-team-click-dropbtnTrue" type="button" onclick="myTeamTrue()"><p>Great West Gourmet - San Francisco, CA</p> <span>&#8250;</span></button>
-            <div class="meet-our-team-click-content-true" id="myDropdownTeam">
-              <div class="our-team-true">
-                <div class="our-team-true-heading">
-                  <h3 class="our-team-true-title">Gabriel Gonzalez</h3>
-                </div>
-                <div class="our-team-true-image"><img src="../../images/images1.jpg" alt=""/></div>
-                <div class="our-team-true-content">
-                  <h3 class="our-team-true-content-title">Bobby Hunt</h3>
-                  <p class="our-team-true-content-email">gabriel@greatwestproduce.com</p><span class="our-team-true-content-price">323-869-0200</span>
+          </div>
+        </div>
+      </section>
+      <section class="great-west-gourmet">
+        <div class="container">
+          <div class="great-west-gourmet-title">
+            <h4>Great West Gourmet</h4>
+            <h4>San Francisco, CA</h4>
+          </div>
+          <button class="great-west-gourmet-main-dropdown" type="button" onclick="showGreat()"><p>Great West Gourmet San Francisco, CA</p> <span >&#8250;</span></button>
+          <div class="great-west-gourmet-main">
+            <div class="great-west-gourmet-main-title"><span>Sales</span></div>
+            <div class="great-west-gourmet-main-content" id="myGreatWest">
+              <div class="people-west">
+                <div class="people-west-image"><img src="../../images/images1.jpg" alt=""/></div>
+                <div class="people-west-content">
+                  <h3 class="people-west-content-heading">Ricky Ramirez</h3>
+                  <p class="people-west-content-email">ricky.ramirez@greatwestgourmet.com</p><span class="people-west-content-price">415-855-8999</span>
                 </div>
               </div>
-              <div class="our-team-true">
-                <div class="our-team-true-heading">
-                  <h3 class="our-team-true-title">Joe San Marco</h3>
+              <div class="people-west">
+                <div class="people-west-image"><img src="../../images/images1.jpg" alt=""/></div>
+                <div class="people-west-content">
+                  <h3 class="people-west-content-heading">Ricky Ramirez</h3>
+                  <p class="people-west-content-email">ricky.ramirez@greatwestgourmet.com</p><span class="people-west-content-price">415-855-8999</span>
                 </div>
-                <div class="our-team-true-image"><img src="../../images/images1.jpg" alt=""/></div>
-                <div class="our-team-true-content">
-                  <h3 class="our-team-true-content-title">Bobby Hunt</h3>
-                  <p class="our-team-true-content-email">sanmarco@greatwestproduce.com</p><span class="our-team-true-content-price">323-869-0200</span>
+              </div>
+              <div class="people-west">
+                <div class="people-west-image"><img src="../../images/images1.jpg" alt=""/></div>
+                <div class="people-west-content">
+                  <h3 class="people-west-content-heading">Ricky Ramirez</h3>
+                  <p class="people-west-content-email">ricky.ramirez@greatwestgourmet.com</p><span class="people-west-content-price">415-855-8999</span>
+                </div>
+              </div>
+              <div class="people-west">
+                <div class="people-west-image"><img src="../../images/images1.jpg" alt=""/></div>
+                <div class="people-west-content">
+                  <h3 class="people-west-content-heading">Ricky Ramirez</h3>
+                  <p class="people-west-content-email">ricky.ramirez@greatwestgourmet.com</p><span class="people-west-content-price">415-855-8999</span>
+                </div>
+              </div>
+              <div class="people-west">
+                <div class="people-west-image"><img src="../../images/images1.jpg" alt=""/></div>
+                <div class="people-west-content">
+                  <h3 class="people-west-content-heading">Ricky Ramirez</h3>
+                  <p class="people-west-content-email">ricky.ramirez@greatwestgourmet.com</p><span class="people-west-content-price">415-855-8999</span>
                 </div>
               </div>
             </div>

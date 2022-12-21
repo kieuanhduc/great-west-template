@@ -18,21 +18,7 @@
             }
         }
         .showTrue{display:block;}
-        .meet-our-team-click-dropbtnTrue {
-            background-color: #D0D2C7;
-            color: #FFFFFF;
-            padding: 0.4rem;
-            font-size: 1.6rem;
-            border: none;
-            cursor: pointer;
-            span{
-                content:"\203A";
-                color: #FFFFFF;
-                font-size: 3.2rem;
-                padding-bottom: 0.6rem;
-            }
-        }
-        .showMain{display:block;}
+        
         
         &-container{
             &-heading{
@@ -119,58 +105,6 @@
                 
             }
         }
-        &-content-true{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 9.2rem 7.7rem;
-            margin-top: 4.5rem;
-            font-family:$secondary-font;
-            .our-team-true{
-                &-heading{
-                    h3{
-                        font-size: 1.8rem;
-                        font-weight: 700;
-                        line-height: 3.8rem;
-                        color: #D0D2C7;
-                        margin-bottom: 3.3rem;
-                    }
-                }
-                &-image img{
-                    width: 24.7rem;
-                    height: 24.7rem;
-                    border-radius: 12rem;
-                }
-                &-content{
-                    margin-top: 3.6rem;
-                    color: $color-dark-gray;
-                    &-title{
-                        font-size: 1.6rem;
-                        line-height: 3.8rem;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                        text-decoration: underline;
-                        margin-bottom: 0.4rem;
-                    }
-                    &-email{
-                        font-size: 1.6rem;
-                        font-weight: 400;
-                        line-height: 2rem;
-                        margin-bottom: 1.4rem;
-                        height: 2.8rem;
-                        text-decoration: underline;
-                        word-break: break-word;
-                    }
-                    &-price{
-                        line-height: 2.4rem;
-                        font-weight: 400;
-                        font-size: 1.6rem;
-                        text-decoration: underline;
-                    }
-                }
-                
-            }
-            
-        }
     }
 }
 @include maxWidth(1160px){
@@ -187,19 +121,8 @@
             }
         }
     }
-    .meet-our-team-click-content-true{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr; 
-        gap: 6.4rem 7.7rem;
-        .out-team-true{
-            .our-team-true-content{
-                .our-team-true-content-desc{
-                    height: 0px !important;
-                }
-            }
-        }
-
-    }
+   
+    
 }
 @include maxWidth(890px){
     .meet-our-team-click-container-content-information{
@@ -213,29 +136,22 @@
             }
         }
     }
-    .meet-our-team-click-content-true{
-        display: grid;
-        grid-template-columns: 1fr 1fr; 
-        gap: 5rem;
-        .our-team-true{
-            // margin: auto;
-            .our-team-true-content{
-                margin-top: 3rem;
-                .our-team-true-content-email{
-                    line-height: unset;
-                    height: 2.4rem;
-                    margin-bottom: 1rem;
-                }
-            }
-            
-        }
-    }
+    
 
 }
 @include maxWidth(768px){
+    .meet-our-team-click-container-heading{
+        display: none;
+    }
+    .meet-our-team-click-container-title{
+        display: none;
+    }
     .meet-our-team-click{
+        .meet-our-team-click-container-content-title{
+            display: none;
+        }
         .meet-our-team-click-dropbtn{
-            margin-top: 3rem;
+           
             display: block;
             display: flex;
             align-items: center;
@@ -249,23 +165,6 @@
             }
         }
         .meet-our-team-click-container{
-            display: none;
-        }
-        .meet-our-team-click-dropbtnTrue{
-            margin-top: 3rem;
-            display: block;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            padding: 0 1.5rem;
-            height: 4rem;
-            p{
-                font-size: 1.6rem;
-                line-height: 2.6rem;
-            }
-        }
-        .meet-our-team-click-content-true{
             display: none;
         }
     }
@@ -292,32 +191,16 @@
                 }
         }
     }
-    .meet-our-team-click-content-true{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4.8rem 9rem;
-        .our-team-true{
-            text-align: center;
-            .our-team-true-image img{
-                width: 18rem ;
-                height: 18rem ;
-                margin: auto;
-            }
-            .our-team-true-content
-                .our-team-true-content-email{
-                    font-size:1.6rem ;
-                }
-                .our-team-true-content-price{
-                    font-size:1.6rem ;
-                }
-                .our-team-true-content-desc{
-                    font-size:1.6rem ;
-                }
-        }
-    }
+   
 }
 @include maxWidth(563px){
-    
+    .meet-our-team-click{
+        .meet-our-team-click-dropbtn{
+            p{
+                font-size: 14px;
+            }
+        }
+    }
     .meet-our-team-click-container-content-information{
         display: block;
         .our-team{
@@ -329,24 +212,6 @@
             .our-team-content{
                 text-align: center ;
                 .our-team-content-email{
-                    margin-bottom: 0.3rem;
-                }
-            }
-        }
-    }
-    .meet-our-team-click-content-true{
-        
-        display: block;
-        .our-team-true{
-            margin-bottom: 4.8rem;
-            .our-team-true-image img{
-                margin: auto;
-                width: 24.7rem;
-                height: 24.7rem;
-            }
-            .our-team-true-content{
-                margin-top: 3rem;
-                .our-team-true-content-email{
                     margin-bottom: 0.3rem;
                 }
             }
