@@ -554,6 +554,9 @@ blockquote {
     .let-us-introduce-ourselves-click .let-us-introduce-ourselves-click-dropbtn p {
       font-size: 1.6rem;
       line-height: 2.6rem; }
+    .let-us-introduce-ourselves-click .let-us-introduce-ourselves-click-dropbtn .show {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg); }
   .let-us-introduce-ourselves-content {
     display: none;
     margin-bottom: 30px; }
@@ -873,6 +876,9 @@ blockquote {
     .great-west-gourmet-main-dropdown p {
       font-size: 1.6rem;
       line-height: 2.6rem; }
+    .great-west-gourmet-main-dropdown .showTrue {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg); }
   .great-west-gourmet-main {
     display: none; }
   .great-west-gourmet-main-title {

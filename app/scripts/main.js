@@ -29,6 +29,7 @@ $(document).ready(function () {
 
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
+  document.getElementsByClassName("icon-show")[0].classList.toggle("show");
   window.onclick = function (event) {
     if (!event.target.matches(".let-us-introduce-ourselves-click-dropbtn")) {
       var dropdowns = document.getElementsByClassName(
@@ -39,6 +40,7 @@ function myFunction() {
         var openDropdown = dropdowns[i];
         if (openDropdown.classList.contains("show")) {
           openDropdown.classList.remove("show");
+          // document.getElementsByClassName("icon-show")[0].classList.remove("show");
         }
       }
     }
@@ -54,8 +56,10 @@ function myFunction() {
 
 function myTeam() {
   var select_item = document.getElementsByClassName("meet-our-team-click-container")[0].style.display;
+  
   if(select_item === 'none')
     document.getElementsByClassName("meet-our-team-click-container")[0].style.display="block";
+    
   else
     document.getElementsByClassName("meet-our-team-click-container")[0].style.display="none";
 }
@@ -63,6 +67,7 @@ function myTeam() {
 
 function showGreat() {
   var select_item = document.getElementsByClassName("great-west-gourmet-main")[0].style.display;
+  document.getElementsByClassName("icon-showTrue")[0].classList.toggle("showTrue");
   if(select_item === 'none')
     document.getElementsByClassName("great-west-gourmet-main")[0].style.display="block";
   else

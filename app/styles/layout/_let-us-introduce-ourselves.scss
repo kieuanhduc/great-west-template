@@ -196,8 +196,12 @@
                 font-size: 1.6rem;
                 line-height: 2.6rem;
             }
+            .show {
+                transform: rotate(90deg);
+            }
         } 
     }
+
     .let-us-introduce-ourselves-content{
         display: none;
         margin-bottom: 30px;
@@ -250,6 +254,7 @@
             }
         }
     }
+    
     .let-us-introduce-ourselves-content
         .container{
             display: block;
