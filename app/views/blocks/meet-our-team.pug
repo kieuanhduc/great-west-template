@@ -1,106 +1,110 @@
 section.meet-our-team
     .container
-        .meet-our-team-heading
-            h3 Meet Our Team
-        .meet-our-team-title
-            h4 Great West Produce
-            h4 Commerce, CA
-        .meet-our-team-content
-            .meet-our-team-content-title
-                span Sales
-            .meet-our-team-content-information
-                +ourTeam({
-                    src: "../../images/images1.jpg",
-                    title: "Brad Heck",
-                    email: "brad@greatwestproduce.com",
-                    price:"323-869-0200 x 2514",
-                    desc: "Asparagus",
-                })
-                +ourTeam({
-                    src: "../../images/images1.jpg",
-                    title: "Francisco Jardim",
-                    email: "cisco@greatwestproduce.com",
-                    price:"323-869-0200 x 2510",
-                    desc: "Corn, Mixed Vegetables ",
-                })
-                +ourTeam({
-                    src: "../../images/images1.jpg",
-                    title: "Ben Heck",
-                    email: "ben@greatwestproduce.com",
-                    price:"323-869-0200 x 2505",
-                    desc: "Brussel Sprouts, Squash, Mixed Vegetables",
-                })
-                +ourTeam({
-                    src: "../../images/images1.jpg",
-                    title: "Jeff Johnson",
-                    email: "jjohnson@greatwestproduce.com",
-                    price:"323-869-0200",
-                    desc: "Dry Onions  ",
-                })
-                +ourTeam({
-                    src: "../../images/images1.jpg",
-                    title: "Kevin Johnson",
-                    email: "kevin@greatwestproduce.com",
-                    price:"323-869-0200",
-                    desc: "Potatoes, Berries",
-                })
-                +ourTeam({
-                    src: "../../images/images1.jpg",
-                    title: "David Lizzarago",
-                    email: "david@greatwestproduce.com",
-                    price:"323-869-0200",
-                    desc: "Green Beans, Hot Peppers, Mixed Vegetables",
-                })
-                +ourTeam({
-                    src: "../../images/images1.jpg",
-                    title: "Mark Frazee",
-                    email: "mark@greatwestproduce.com",
-                    price:"323-869-0200",
-                    desc: "Consolidation, Mixed Vegetables  ",
-                })
-                +ourTeam({
-                    src: "../../images/images1.jpg",
-                    title: "Doug Wakabayashi",
-                    email: "doug@greatwestproduce.com",
-                    price:"323-869-0200",
-                    desc: "Consolidation",
-                })
-                +ourTeam({
-                    src: "../../images/images1.jpg",
-                    title: "Alan Church",
-                    email: "alan@greatwestproduce.com",
-                    price:"323-869-0200",
-                    desc: "Pineapple",
-                })
-                +ourTeam({
-                    src: "../../images/images1.jpg",
-                    title: "Cheyne Long",
-                    email: "cheyne@greatwestproduce.com",
-                    price:"323-869-0200",
-                    desc: "Snow Peas, Snap Peas,Mixed Vegetables",
-                })
-                +ourTeam({
-                    src: "../../images/images1.jpg",
-                    title: "Doug Wells",
-                    email: "doug.wells@greatwestproduce.com",
-                    price:"323-869-0200",
-                    desc: "Grapes",
-                })
-                +ourTeam({
-                    src: "../../images/images1.jpg",
-                    title: "Bobby Hunt",
-                    email: "bobby@greatwestproduce.com",
-                    price:"323-869-0200",
-                    desc: "Mixed Vegetables ",
-                })
-                +ourTeam({
-                    src: "../../images/images1.jpg",
-                    title: "Doug Wakabayashi",
-                    email: "doug@greatwestproduce.com",
-                    price:"323-869-0200",
-                })
+        .meet-our-team-click
+            button.meet-our-team-click-dropbtn(type='button', onclick='myTeam()' ) <p>Great West Produce - Commerce, CA</p> <span >&#8250;</span>
+            .meet-our-team-click-container#myOurTeam
+                .meet-our-team-click-container-heading
+                    h3 Meet Our Team
+                .meet-our-team-click-container-title
+                    h4 Great West Produce
+                    h4 Commerce, CA
+                .meet-our-team-click-container-content
+                .meet-our-team-click-container-content-title
+                    span Sales
+                .meet-our-team-click-container-content-information
+                    +ourTeam({
+                        src: "../../images/images1.jpg",
+                        title: "Brad Heck",
+                        email: "brad@greatwestproduce.com",
+                        price:"323-869-0200 x 2514",
+                        desc: "Asparagus",
+                    })
+                    +ourTeam({
+                        src: "../../images/images1.jpg",
+                        title: "Francisco Jardim",
+                        email: "cisco@greatwestproduce.com",
+                        price:"323-869-0200 x 2510",
+                        desc: "Corn, Mixed Vegetables ",
+                    })
+                    +ourTeam({
+                        src: "../../images/images1.jpg",
+                        title: "Ben Heck",
+                        email: "ben@greatwestproduce.com",
+                        price:"323-869-0200 x 2505",
+                        desc: "Brussel Sprouts, Squash, Mixed Vegetables",
+                    })
+                    +ourTeam({
+                        src: "../../images/images1.jpg",
+                        title: "Jeff Johnson",
+                        email: "jjohnson@greatwestproduce.com",
+                        price:"323-869-0200",
+                        desc: "Dry Onions  ",
+                    })
+                    +ourTeam({
+                        src: "../../images/images1.jpg",
+                        title: "Kevin Johnson",
+                        email: "kevin@greatwestproduce.com",
+                        price:"323-869-0200",
+                        desc: "Potatoes, Berries",
+                    })
+                    +ourTeam({
+                        src: "../../images/images1.jpg",
+                        title: "David Lizzarago",
+                        email: "david@greatwestproduce.com",
+                        price:"323-869-0200",
+                        desc: "Green Beans, Hot Peppers, Mixed Vegetables",
+                    })
+                    +ourTeam({
+                        src: "../../images/images1.jpg",
+                        title: "Mark Frazee",
+                        email: "mark@greatwestproduce.com",
+                        price:"323-869-0200",
+                        desc: "Consolidation, Mixed Vegetables  ",
+                    })
+                    +ourTeam({
+                        src: "../../images/images1.jpg",
+                        title: "Doug Wakabayashi",
+                        email: "doug@greatwestproduce.com",
+                        price:"323-869-0200",
+                        desc: "Consolidation",
+                    })
+                    +ourTeam({
+                        src: "../../images/images1.jpg",
+                        title: "Alan Church",
+                        email: "alan@greatwestproduce.com",
+                        price:"323-869-0200",
+                        desc: "Pineapple",
+                    })
+                    +ourTeam({
+                        src: "../../images/images1.jpg",
+                        title: "Cheyne Long",
+                        email: "cheyne@greatwestproduce.com",
+                        price:"323-869-0200",
+                        desc: "Snow Peas, Snap Peas,Mixed Vegetables",
+                    })
+                    +ourTeam({
+                        src: "../../images/images1.jpg",
+                        title: "Doug Wells",
+                        email: "doug.wells@greatwestproduce.com",
+                        price:"323-869-0200",
+                        desc: "Grapes",
+                    })
+                    +ourTeam({
+                        src: "../../images/images1.jpg",
+                        title: "Bobby Hunt",
+                        email: "bobby@greatwestproduce.com",
+                        price:"323-869-0200",
+                        desc: "Mixed Vegetables ",
+                    })
+                    +ourTeam({
+                        src: "../../images/images1.jpg",
+                        title: "Doug Wakabayashi",
+                        email: "doug@greatwestproduce.com",
+                        price:"323-869-0200",
+                    })
 
-            .meet-our-team-content-true
+            button.meet-our-team-click-dropbtnTrue(type='button', onclick='myTeamTrue()' ) <p>Great West Gourmet - San Francisco, CA</p> <span>&#8250;</span>
+            .meet-our-team-click-content-true#myDropdownTeam
                 +ourTeamTrue({
                     heading: "Gabriel Gonzalez",
                     src: "../../images/images1.jpg",

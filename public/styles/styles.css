@@ -392,6 +392,26 @@ blockquote {
   color: #83B03D;
   font-family: EBGaramond; }
 
+.let-us-introduce-ourselves-click button {
+  display: none; }
+
+.let-us-introduce-ourselves-click .let-us-introduce-ourselves-click-dropbtn {
+  background-color: #D0D2C7;
+  color: #FFFFFF;
+  padding: 0.4rem;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer; }
+
+.let-us-introduce-ourselves-click .show {
+  display: block; }
+
+.let-us-introduce-ourselves-click span {
+  content: "\203A";
+  color: #FFFFFF;
+  font-size: 3.2rem;
+  padding-bottom: 0.6rem; }
+
 .let-us-introduce-ourselves-content .container {
   margin-top: 6.5rem;
   display: grid;
@@ -449,6 +469,8 @@ blockquote {
     font-size: 4rem; }
   .let-us-introduce-ourselves-titles span {
     display: none; }
+  .let-us-introduce-ourselves-click-dropbtn {
+    width: 345px; }
   .let-us-introduce-ourselves-content
 .container {
     display: grid;
@@ -483,25 +505,41 @@ blockquote {
     font-size: 4rem; }
   .let-us-introduce-ourselves-titles span {
     display: none; }
-  .let-us-introduce-ourselves-content
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4.6rem 9rem;
-    text-align: center; }
-    .let-us-introduce-ourselves-content
-.container .detail-information
+  .let-us-introduce-ourselves-click .let-us-introduce-ourselves-click-dropbtn {
+    margin-top: 3rem;
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1.5rem;
+    height: 4rem; }
+    .let-us-introduce-ourselves-click .let-us-introduce-ourselves-click-dropbtn p {
+      font-size: 1.6rem;
+      line-height: 2.6rem; }
+  .let-us-introduce-ourselves-content {
+    display: none; }
+    .let-us-introduce-ourselves-content .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4.6rem 9rem;
+      text-align: center; }
+      .let-us-introduce-ourselves-content .container .detail-information
 .detail-information-image img {
-      margin: auto;
-      width: 18rem;
-      height: 18rem; }
-    .let-us-introduce-ourselves-content
-.container .detail-information-content {
-      margin-top: 3rem; }
-      .let-us-introduce-ourselves-content
-.container .detail-information-content .detail-information-content-desc {
-        height: 2.7rem;
-        line-height: 1.7rem; } }
+        margin: auto;
+        width: 18rem;
+        height: 18rem; }
+      .let-us-introduce-ourselves-content .container .detail-information-content {
+        margin-top: 3rem; }
+        .let-us-introduce-ourselves-content .container .detail-information-content .detail-information-content-desc {
+          height: 2.7rem;
+          line-height: 1.7rem; } }
 
 @media screen and (max-width: 563px) {
   .let-us-introduce-ourselves-titles h3 {
@@ -509,6 +547,8 @@ blockquote {
     line-height: 4.2rem; }
   .let-us-introduce-ourselves-titles span {
     display: none; }
+  .let-us-introduce-ourselves-click .let-us-introduce-ourselves-click-dropbtn {
+    width: 100%; }
   .let-us-introduce-ourselves-content
 .container {
     display: block; }
@@ -529,9 +569,45 @@ blockquote {
 .container .detail-information .detail-information-content .detail-information-content-email {
           line-height: unset; } }
 
-.meet-our-team-heading {
+/* Dropdown Button */
+.meet-our-team-click button {
+  display: none; }
+
+.meet-our-team-click .meet-our-team-click-dropbtn {
+  background-color: #D0D2C7;
+  color: #FFFFFF;
+  padding: 0.4rem;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer; }
+  .meet-our-team-click .meet-our-team-click-dropbtn span {
+    content: "\203A";
+    color: #FFFFFF;
+    font-size: 3.2rem;
+    padding-bottom: 0.6rem; }
+
+.meet-our-team-click .showTrue {
+  display: block; }
+
+.meet-our-team-click .meet-our-team-click-dropbtnTrue {
+  background-color: #D0D2C7;
+  color: #FFFFFF;
+  padding: 0.4rem;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer; }
+  .meet-our-team-click .meet-our-team-click-dropbtnTrue span {
+    content: "\203A";
+    color: #FFFFFF;
+    font-size: 3.2rem;
+    padding-bottom: 0.6rem; }
+
+.meet-our-team-click .showMain {
+  display: block; }
+
+.meet-our-team-click-container-heading {
   margin-top: 40px; }
-  .meet-our-team-heading h3 {
+  .meet-our-team-click-container-heading h3 {
     font-size: 5rem;
     line-height: 5.6rem;
     font-weight: 400;
@@ -539,88 +615,88 @@ blockquote {
     font-family: EBGaramond;
     color: #83B03D; }
 
-.meet-our-team-title {
+.meet-our-team-click-container-title {
   margin-top: 3.8rem; }
-  .meet-our-team-title h4 {
+  .meet-our-team-click-container-title h4 {
     font-size: 1.8rem;
     font-family: Roboto;
     font-weight: 700;
     line-height: 2.8rem;
     color: #83B03D; }
 
-.meet-our-team-content-title span {
+.meet-our-team-click-container-content-title span {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 3.8rem;
   color: #D0D2C7; }
 
-.meet-our-team-content-information {
+.meet-our-team-click-container-content-information {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 9.2rem 7.7rem;
   margin-top: 3.4rem; }
-  .meet-our-team-content-information .our-team-image img {
+  .meet-our-team-click-container-content-information .our-team-image img {
     width: 24.7rem;
     height: 24.7rem;
     border-radius: 12rem; }
-  .meet-our-team-content-information .our-team-content {
+  .meet-our-team-click-container-content-information .our-team-content {
     word-break: break-word;
     margin-top: 3.6rem;
     color: #7B7B7B;
     font-family: Roboto; }
-    .meet-our-team-content-information .our-team-content-heading {
+    .meet-our-team-click-container-content-information .our-team-content-heading {
       font-size: 1.8rem;
       line-height: 3.8rem;
       font-weight: 700;
       text-transform: uppercase;
       text-decoration: underline;
       margin-bottom: 0.4rem; }
-    .meet-our-team-content-information .our-team-content-email {
-      font-size: 1.8rem;
+    .meet-our-team-click-container-content-information .our-team-content-email {
+      font-size: 1.6rem;
       font-weight: 400;
       margin-bottom: 2rem;
       text-decoration: underline;
       height: 2.8rem; }
-    .meet-our-team-content-information .our-team-content-price {
+    .meet-our-team-click-container-content-information .our-team-content-price {
       line-height: 2.4rem;
       font-weight: 400;
       font-size: 1.8rem;
       text-decoration: underline;
       height: 2.8rem; }
-    .meet-our-team-content-information .our-team-content-desc {
+    .meet-our-team-click-container-content-information .our-team-content-desc {
       font-size: 1.8rem;
       font-weight: 700;
       text-decoration: underline;
       margin-top: 0.5rem;
       line-height: 2.8rem; }
 
-.meet-our-team-content-true {
+.meet-our-team-click-content-true {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 9.2rem 7.7rem;
   margin-top: 4.5rem;
   font-family: Roboto; }
-  .meet-our-team-content-true .our-team-true-heading h3 {
+  .meet-our-team-click-content-true .our-team-true-heading h3 {
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 3.8rem;
     color: #D0D2C7;
     margin-bottom: 3.3rem; }
-  .meet-our-team-content-true .our-team-true-image img {
+  .meet-our-team-click-content-true .our-team-true-image img {
     width: 24.7rem;
     height: 24.7rem;
     border-radius: 12rem; }
-  .meet-our-team-content-true .our-team-true-content {
+  .meet-our-team-click-content-true .our-team-true-content {
     margin-top: 3.6rem;
     color: #7B7B7B; }
-    .meet-our-team-content-true .our-team-true-content-title {
+    .meet-our-team-click-content-true .our-team-true-content-title {
       font-size: 1.6rem;
       line-height: 3.8rem;
       font-weight: 700;
       text-transform: uppercase;
       text-decoration: underline;
       margin-bottom: 0.4rem; }
-    .meet-our-team-content-true .our-team-true-content-email {
+    .meet-our-team-click-content-true .our-team-true-content-email {
       font-size: 1.6rem;
       font-weight: 400;
       line-height: 2rem;
@@ -628,103 +704,143 @@ blockquote {
       height: 2.8rem;
       text-decoration: underline;
       word-break: break-word; }
-    .meet-our-team-content-true .our-team-true-content-price {
+    .meet-our-team-click-content-true .our-team-true-content-price {
       line-height: 2.4rem;
       font-weight: 400;
       font-size: 1.6rem;
       text-decoration: underline; }
 
 @media screen and (max-width: 1160px) {
-  .meet-our-team-content-information {
+  .meet-our-team-click-container-content-information {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 6.4rem 7.7rem; }
-    .meet-our-team-content-information .out-team .our-team-content .our-team-content-desc {
+    .meet-our-team-click-container-content-information .out-team .our-team-content .our-team-content-desc {
       height: 0px !important; }
-  .meet-our-team-content-true {
+  .meet-our-team-click-content-true {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 6.4rem 7.7rem; }
-    .meet-our-team-content-true .out-team-true .our-team-true-content .our-team-true-content-desc {
+    .meet-our-team-click-content-true .out-team-true .our-team-true-content .our-team-true-content-desc {
       height: 0px !important; } }
 
 @media screen and (max-width: 890px) {
-  .meet-our-team-content-information {
+  .meet-our-team-click-container-content-information {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4.8rem 9rem; }
-    .meet-our-team-content-information .our-team .our-team-content-email {
+    .meet-our-team-click-container-content-information .our-team .our-team-content-email {
       margin-bottom: 1rem; }
-  .meet-our-team-content-true {
+  .meet-our-team-click-content-true {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5rem; }
-    .meet-our-team-content-true .our-team-true .our-team-true-content {
+    .meet-our-team-click-content-true .our-team-true .our-team-true-content {
       margin-top: 3rem; }
-      .meet-our-team-content-true .our-team-true .our-team-true-content .our-team-true-content-email {
+      .meet-our-team-click-content-true .our-team-true .our-team-true-content .our-team-true-content-email {
         line-height: unset;
         height: 2.4rem;
         margin-bottom: 1rem; } }
 
 @media screen and (max-width: 768px) {
-  .meet-our-team-content-information {
+  .meet-our-team-click .meet-our-team-click-dropbtn {
+    margin-top: 3rem;
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1.5rem;
+    height: 4rem; }
+    .meet-our-team-click .meet-our-team-click-dropbtn p {
+      font-size: 1.6rem;
+      line-height: 2.6rem; }
+  .meet-our-team-click .meet-our-team-click-container {
+    display: none; }
+  .meet-our-team-click .meet-our-team-click-dropbtnTrue {
+    margin-top: 3rem;
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1.5rem;
+    height: 4rem; }
+    .meet-our-team-click .meet-our-team-click-dropbtnTrue p {
+      font-size: 1.6rem;
+      line-height: 2.6rem; }
+  .meet-our-team-click .meet-our-team-click-content-true {
+    display: none; }
+  .meet-our-team-click-container-content-information {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4.8rem 9rem; }
-    .meet-our-team-content-information .our-team {
+    .meet-our-team-click-container-content-information .our-team {
       text-align: center; }
-      .meet-our-team-content-information .our-team .our-team-image img {
+      .meet-our-team-click-container-content-information .our-team .our-team-image img {
         margin: auto;
         width: 18rem;
         height: 18rem; }
-      .meet-our-team-content-information .our-team .our-team-content
+      .meet-our-team-click-container-content-information .our-team .our-team-content
 .our-team-content-email {
         font-size: 1.6rem; }
-      .meet-our-team-content-information .our-team .our-team-content-price {
+      .meet-our-team-click-container-content-information .our-team .our-team-content-price {
         font-size: 1.6rem; }
-      .meet-our-team-content-information .our-team .our-team-content-desc {
+      .meet-our-team-click-container-content-information .our-team .our-team-content-desc {
         font-size: 1.6rem; }
-  .meet-our-team-content-true {
+  .meet-our-team-click-content-true {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4.8rem 9rem; }
-    .meet-our-team-content-true .our-team-true {
+    .meet-our-team-click-content-true .our-team-true {
       text-align: center; }
-      .meet-our-team-content-true .our-team-true .our-team-true-image img {
+      .meet-our-team-click-content-true .our-team-true .our-team-true-image img {
         width: 18rem;
         height: 18rem;
         margin: auto; }
-      .meet-our-team-content-true .our-team-true .our-team-true-content
+      .meet-our-team-click-content-true .our-team-true .our-team-true-content
 .our-team-true-content-email {
         font-size: 1.6rem; }
-      .meet-our-team-content-true .our-team-true .our-team-true-content-price {
+      .meet-our-team-click-content-true .our-team-true .our-team-true-content-price {
         font-size: 1.6rem; }
-      .meet-our-team-content-true .our-team-true .our-team-true-content-desc {
+      .meet-our-team-click-content-true .our-team-true .our-team-true-content-desc {
         font-size: 1.6rem; } }
 
 @media screen and (max-width: 563px) {
-  .meet-our-team-content-information {
+  .meet-our-team-click-container-content-information {
     display: block; }
-    .meet-our-team-content-information .our-team {
+    .meet-our-team-click-container-content-information .our-team {
       margin-bottom: 4.8rem; }
-      .meet-our-team-content-information .our-team .our-team-image img {
+      .meet-our-team-click-container-content-information .our-team .our-team-image img {
         width: 24.7rem;
         height: 24.7rem; }
-      .meet-our-team-content-information .our-team .our-team-content {
+      .meet-our-team-click-container-content-information .our-team .our-team-content {
         text-align: center; }
-        .meet-our-team-content-information .our-team .our-team-content .our-team-content-email {
+        .meet-our-team-click-container-content-information .our-team .our-team-content .our-team-content-email {
           margin-bottom: 0.3rem; }
-  .meet-our-team-content-true {
+  .meet-our-team-click-content-true {
     display: block; }
-    .meet-our-team-content-true .our-team-true {
+    .meet-our-team-click-content-true .our-team-true {
       margin-bottom: 4.8rem; }
-      .meet-our-team-content-true .our-team-true .our-team-true-image img {
+      .meet-our-team-click-content-true .our-team-true .our-team-true-image img {
         margin: auto;
         width: 24.7rem;
         height: 24.7rem; }
-      .meet-our-team-content-true .our-team-true .our-team-true-content {
+      .meet-our-team-click-content-true .our-team-true .our-team-true-content {
         margin-top: 3rem; }
-        .meet-our-team-content-true .our-team-true .our-team-true-content .our-team-true-content-email {
+        .meet-our-team-click-content-true .our-team-true .our-team-true-content .our-team-true-content-email {
           margin-bottom: 0.3rem; } }
 
 .great-west-gourmet {
